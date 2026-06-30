@@ -33,6 +33,7 @@ function layout({ active, title, hero, body }) {
   const heroBlock = hero
     ? `  <section class="hero">
     <div class="hero-inner">
+      <img class="hero-logo" src="assets/home-header.jpg" alt="Groton Dunstable: Our World, Our Communities, Our Schools — Together We Achieve">
       <p class="eyebrow">Groton Dunstable SEPAC</p>
       <h1>GD SEPAC</h1>
       <p class="tagline">IEP and 504 Together</p>
@@ -56,7 +57,7 @@ function layout({ active, title, hero, body }) {
   <header class="site-header">
     <div class="brand">
       <a href="index.html" class="brand-link">
-        <span class="brand-mark">GD</span>
+        <span class="brand-mark"><img src="assets/home-header.jpg" alt="Groton Dunstable SEPAC logo"></span>
         <span class="brand-text"><strong>GD SEPAC</strong><small>Groton Dunstable</small></span>
       </a>
     </div>
