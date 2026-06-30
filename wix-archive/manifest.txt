@@ -1,0 +1,20 @@
+Archived images from the original Wix site (static.wixstatic.com), pulled 2026-06-30.
+Web-optimized: resized to max 1600px, then converted to WebP (q80).
+These files are NOT referenced by any page in the site; preserved for safekeeping.
+
+FILE                                               DIMENSIONS   SIZE     APPEARED ON
+11062b_630905f5a403426190d8d67fc1e9407a_mv2.webp   1600x1066    132K     about-disability, about-us-contact, advocacy, by-laws, helpful-organizations, home, meetings-events, state-and-federal-guidance, understanding-the-process
+11062b_5e38b760d06e407cbf05f2562c5ca855_mv2.webp   1600x1066    108K     about-disability
+11062b_98d902b0fd624985b68215e9c2a727ab_mv2.webp   1600x1067    68K      about-disability
+11062b_bcc80ccb84994a00b3e5349ed06ad800_mv2.webp   1600x1066    76K      about-disability
+4432a4c385c44e609ac41982225b1669.webp              1600x1279    148K     about-disability
+fdc7d4be21b47b689394dc11d4291ccd.webp              570x858      36K      about-disability
+11062b_da729936f59549929b61196af24e274c_mv2.webp   1067x1600    40K      about-disability
+d8f143f66f1b41dfb1cbcf2f4fafb5ef.webp              1600x1066    108K     about-disability
+11062b_2a55fdcdab4e4e9aa893887b5612bebf_mv2.webp   1600x1066    56K      about-disability
+949c5aef51724256b31ea56be6b3690c.webp              1600x1066    76K      about-disability
+11062b_b1c810b691294a66a167ad18c553919e_mv2.webp   1600x1066    96K      about-disability
+nsplsh_aa7f2779cffc4d7eafb8aac5a8f3e8dc_mv2.webp   1600x1066    136K     about-disability
+11062b_78cb50697fc34c299e5225b503c1efbe_mv2.webp   1600x1059    180K     about-disability
+11062b_8818cb77a1be44d093816fa55b25cb57_mv2.webp   1600x1067    40K      about-disability
+581285_3197bfbcf73945899f02f6477089ce1b_mv2.webp   1440x809     64K      meetings-events
