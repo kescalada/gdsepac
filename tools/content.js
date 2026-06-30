@@ -127,8 +127,8 @@ const PAGES = {
           <li><span class="role">Boutwell</span> position currently open</li>
           <li><span class="role">Florence Roche</span> Jen Mertes</li>
           <li><span class="role">Swallow Union</span> Kelley Escalada</li>
-          <li><span class="role">GD Middle School</span> Kristyn MacInnis</li>
-          <li><span class="role">GD High School</span> Katie Cobb Leonard</li>
+          <li><span class="role">Groton Dunstable Middle School</span> Kristyn MacInnis</li>
+          <li><span class="role">Groton Dunstable High School</span> Katie Cobb Leonard</li>
         </ul>
       </section>
 
@@ -139,7 +139,7 @@ const PAGES = {
         communities and speak out for families and disabled children.</p>
         <ul class="people">
           <li><span class="role">School Committee</span> Jolie Reijnders</li>
-          <li><span class="role">DEI Advisory</span> Kelley Escalada</li>
+          <li><span class="role">Diversity, Equity, and Inclusion (DEI) Advisory</span> Kelley Escalada</li>
         </ul>
       </section>
 
@@ -184,15 +184,17 @@ const PAGES = {
           <dt>Meetings with GDRSD Administration</dt>
           <dd>Generally occur monthly, or as needed.</dd>
           <dt>Liaison Meetings</dt>
-          <dd>Liaisons attend their assigned meetings, based on the schedule of their affiliated groups,
+          <dd>Liaisons attend their assigned meetings, based on the schedule of their affiliated groups
           and then provide updates to membership during monthly meetings.</dd>
+          <dt>MassPAC Workshops</dt>
+          <dd>MassPAC workshop offerings are also available to members of the GDRSD community. These
+          will also be emailed as part of the GDRSD Community Happenings newsletter.</dd>
         </dl>
       </section>
 
       <section class="card upcoming">
         <h2>Upcoming Events</h2>
-        <p class="muted">No events at the moment. Please check back, or
-        <a href="mailto:${EMAIL}">email us</a> to be notified.</p>
+        <p class="muted">No events at the moment.</p>
       </section>
     `,
   },
@@ -228,13 +230,13 @@ const DIRECTORY = {
   "helpful-organizations.html": {
     title: "Helpful Organizations",
     skip: ["Helpful Organizations"],
-    intro: `<p>National, state, and local organizations that support families and individuals across
-    a range of disabilities and needs.</p>`,
+    intro: `<p>Local, national, and international organizations with more resources.</p>`,
   },
   "state-and-federal-guidance.html": {
     title: "State and Federal Guidance",
     skip: ["State and Federal Guidance", "Federal and State Laws, Local Policy"],
     intro: `
+      <h2>Federal and State Laws, Local Policy</h2>
       <p>Federal laws are the lowest bar of protection for your student. State law can only
       strengthen the protections of the federal law and never weaken it. Local policies and
       procedures, like state law, can only serve to further your student's rights but can not
