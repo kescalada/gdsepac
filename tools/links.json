@@ -1,0 +1,1840 @@
+{
+ "home": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "GD SEPAC"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Contact Us"
+  }
+ ],
+ "about-us-contact": [
+  {
+   "type": "h",
+   "level": 6,
+   "text": "Get to Know Us"
+  },
+  {
+   "type": "a",
+   "text": "Massachusetts Department of Elementary and Secondary Education",
+   "href": "http://www.doe.mass.edu/sped/"
+  },
+  {
+   "type": "h",
+   "level": 1,
+   "text": "Contact Us"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Contact Information"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Officers"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "School Liaisons"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "District and Community Liaisons"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "District Information"
+  },
+  {
+   "type": "a",
+   "text": "Student Services and Special Education",
+   "href": "https://www.gdrsd.org/page/pupil-services"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Social Media"
+  },
+  {
+   "type": "a",
+   "text": "Facebook",
+   "href": "https://www.facebook.com/groups/443095813186453"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Contact Form"
+  }
+ ],
+ "meetings-events": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "Meetings & Events"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "No events at the moment"
+  }
+ ],
+ "about-disability": [
+  {
+   "type": "h",
+   "level": 6,
+   "text": "Learning About Disability"
+  },
+  {
+   "type": "a",
+   "text": "Normalizing Disability Begins in School",
+   "href": "https://youtu.be/gscAjUlKc7Y"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Autism and Sensory Processing"
+  },
+  {
+   "type": "a",
+   "text": "Ask an Autistic Video Series",
+   "href": "https://www.youtube.com/user/neurowonderful"
+  },
+  {
+   "type": "a",
+   "text": "Neurodiversity: The Key that Unlocked My World",
+   "href": "https://youtu.be/Qvvrme5WIwA"
+  },
+  {
+   "type": "a",
+   "text": "Sensory Experience: The School Hallway",
+   "href": "https://youtu.be/FXnnXHpg7mo"
+  },
+  {
+   "type": "a",
+   "text": "Sensory Experience: The Classroom",
+   "href": "https://youtu.be/1or8pbLdfd0"
+  },
+  {
+   "type": "a",
+   "text": "Listen Up! Katie",
+   "href": "https://youtu.be/R785vm7S1Ck"
+  },
+  {
+   "type": "a",
+   "text": "#StopCombatingMe",
+   "href": "https://youtu.be/zxBt1BFeJFo"
+  },
+  {
+   "type": "a",
+   "text": "The Party: A Virtual Experience",
+   "href": "https://youtu.be/OtwOz1GVkDg"
+  },
+  {
+   "type": "a",
+   "text": "A Story of Undiagnosed Autism",
+   "href": "https://youtu.be/cF2dhWWUyQ4"
+  },
+  {
+   "type": "a",
+   "text": "Temple Grandin: The Autistic Brain",
+   "href": "https://youtu.be/MWePrOuSeSY"
+  },
+  {
+   "type": "a",
+   "text": "MA Autism Commission Guide",
+   "href": "https://www.mass.gov/files/documents/2018/06/27/Resource%20Guide%20ASD%203-14yrs-Eng.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Child Mind: Guide to Autism",
+   "href": "https://childmind.org/topics/autism/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Vision Impairment"
+  },
+  {
+   "type": "a",
+   "text": "The Tommy Edison Experience",
+   "href": "https://www.youtube.com/user/TommyEdisonXP"
+  },
+  {
+   "type": "a",
+   "text": "Visual Impairment is my Super Power",
+   "href": "https://youtu.be/1GPg5KpHY6s"
+  },
+  {
+   "type": "a",
+   "text": "Understanding Visual Impairment in Children",
+   "href": "https://youtu.be/7wGP_k_UP9c"
+  },
+  {
+   "type": "a",
+   "text": "Making the World Accessible",
+   "href": "https://youtu.be/lz0vYzny0NQ"
+  },
+  {
+   "type": "a",
+   "text": "Overlooking Our Vision",
+   "href": "https://youtu.be/L0pljgXZ_GA"
+  },
+  {
+   "type": "a",
+   "text": "Myopia: A Global Epidemic",
+   "href": "https://youtu.be/IeCDXLdKPyU"
+  },
+  {
+   "type": "a",
+   "text": "Experiencing a Loss of Sight Gave Me Vision",
+   "href": "https://youtu.be/6qwZDnSCi5c"
+  },
+  {
+   "type": "a",
+   "text": "Vision Impairment Factsheet",
+   "href": "https://kidshealth.org/en/parents/vision-factsheet.html"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Hearing and Speech"
+  },
+  {
+   "type": "a",
+   "text": "A Day through a Deaf Person's Eyes",
+   "href": "https://www.youtube.com/watch?v=ecmCHXZkTGI"
+  },
+  {
+   "type": "a",
+   "text": "Through the Eyes of Deaf Children",
+   "href": "https://youtu.be/9f1o33kOpnI"
+  },
+  {
+   "type": "a",
+   "text": "Navigating Deafness in a Hearing World",
+   "href": "https://youtu.be/uKKpjvPd6Xo"
+  },
+  {
+   "type": "a",
+   "text": "Darien's Journey with Childhood Apraxia",
+   "href": "https://youtu.be/P22D44j7d8E"
+  },
+  {
+   "type": "a",
+   "text": "Jordan Christian on Apraxia",
+   "href": "https://www.youtube.com/@jordanchristian9099"
+  },
+  {
+   "type": "a",
+   "text": "What Is It Like to Be Unable to Communicate?",
+   "href": "https://youtu.be/m3BF-4GxZAY"
+  },
+  {
+   "type": "a",
+   "text": "Tinnitus: Ringing In the Brain",
+   "href": "https://youtu.be/XGq3MXQlRJs"
+  },
+  {
+   "type": "a",
+   "text": "Making Education Accessible to Deaf Children",
+   "href": "https://youtu.be/U_Q7axl4oXY"
+  },
+  {
+   "type": "a",
+   "text": "I Am Hearing Impaired and I Am America",
+   "href": "https://youtu.be/H_ijs10QK1c"
+  },
+  {
+   "type": "a",
+   "text": "Escaping the Hidden Prison of Auditory Processing Disorder",
+   "href": "https://youtu.be/Ls34Jk7AXu0"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Anxiety"
+  },
+  {
+   "type": "a",
+   "text": "Living With High Functioning Anxiety",
+   "href": "https://youtu.be/JUedQ0_EGCQ"
+  },
+  {
+   "type": "a",
+   "text": "The Healing Powers of Dude",
+   "href": "https://www.netflix.com/title/80239306"
+  },
+  {
+   "type": "a",
+   "text": "4 Illustrations of what Anxiety is Really Like",
+   "href": "https://www.healthline.com/health/mental-health/what-anxiety-looks-like"
+  },
+  {
+   "type": "a",
+   "text": "High Functioning Anxiety",
+   "href": "https://www.bridgestorecovery.com/high-functioning-anxiety/like-high-functioning-anxiety/"
+  },
+  {
+   "type": "a",
+   "text": "Child Mind: Guide to Anxiety",
+   "href": "https://childmind.org/topics/anxiety/"
+  },
+  {
+   "type": "a",
+   "text": "Anxiety: Helping Handout",
+   "href": "https://speced.sunmandearborn.k12.in.us/document-library/resources/1498-anxiety-handout/file"
+  },
+  {
+   "type": "a",
+   "text": "How Does Anxiety Affect Kids in School?",
+   "href": "https://childmind.org/article/classroom-anxiety-in-children/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Tourette's Syndrome"
+  },
+  {
+   "type": "a",
+   "text": "I Have Tourette's But It Doesnt Have Me",
+   "href": "https://www.hbomax.com/feature/urn:hbo:feature:GVw5sggsPdb9hi5sJAAAO"
+  },
+  {
+   "type": "a",
+   "text": "Tourette Does the Talking",
+   "href": "https://youtu.be/0szLOMIt9SQ"
+  },
+  {
+   "type": "a",
+   "text": "I Have Tourette's. Get Over It",
+   "href": "https://youtu.be/YdrSxAMgYBY"
+  },
+  {
+   "type": "a",
+   "text": "Are You Looking At My TICs?",
+   "href": "https://youtu.be/rldzjkO0-0A"
+  },
+  {
+   "type": "a",
+   "text": "Life's A Tic",
+   "href": "https://youtu.be/nhr4jhxW27U"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Reading Challenges"
+  },
+  {
+   "type": "a",
+   "text": "The Secret Upside of Dyslexia",
+   "href": "https://youtu.be/AMrUxxmMz8g"
+  },
+  {
+   "type": "a",
+   "text": "Why Reading Matters",
+   "href": "https://youtu.be/muuWRKYi09s"
+  },
+  {
+   "type": "a",
+   "text": "How I Overcame My Learning Disabilities and Became a Physician",
+   "href": "https://youtu.be/V3rbevc-5Ac"
+  },
+  {
+   "type": "a",
+   "text": "The Creative Brilliance of Dyslexia",
+   "href": "https://youtu.be/CYM40HN82l4"
+  },
+  {
+   "type": "a",
+   "text": "Dyslexic? They're Not Broken",
+   "href": "https://youtu.be/aLYGFt5qiso"
+  },
+  {
+   "type": "a",
+   "text": "The Science of Reading: Basics and Beyond",
+   "href": "https://www.scilearn.com/the-science-of-reading-the-basics-and-beyond/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Intellectual Disabilty"
+  },
+  {
+   "type": "a",
+   "text": "How Much Do You Know About Intellectual Disability?",
+   "href": "https://www.youtube.com/watch?v=BURbLmQL1BE"
+  },
+  {
+   "type": "a",
+   "text": "3 Things I Learned from my Intellectually Disabled Son",
+   "href": "https://www.ted.com/talks/emilie_weight_3_things_i_learned_from_my_intellectually_disabled_son?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare"
+  },
+  {
+   "type": "a",
+   "text": "Let's Talk About Intellectual Disabilities",
+   "href": "https://youtu.be/0XXqr_ZSsMg"
+  },
+  {
+   "type": "a",
+   "text": "College: Possible For Students with Intellectual Disabilities",
+   "href": "https://www.ted.com/talks/edie_cusack_college_possible_for_students_with_intellectual_disabilities?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare"
+  },
+  {
+   "type": "a",
+   "text": "Inclusive Career Placement for People with Intellectual Disabilities",
+   "href": "https://www.ted.com/talks/michelle_chimuka_inclusive_career_placement_for_people_with_intellectual_disabilities?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare"
+  },
+  {
+   "type": "a",
+   "text": "Supporting Students with Intellectual Disabilities",
+   "href": "https://intellectualdisabilities.wordpress.com/perspectives/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Mental Health"
+  },
+  {
+   "type": "a",
+   "text": "How to Talk About Mental Health",
+   "href": "https://youtu.be/nstRHTVv0Aw"
+  },
+  {
+   "type": "a",
+   "text": "Mental Health in Schools",
+   "href": "https://youtu.be/5Hkb6SuGR0g"
+  },
+  {
+   "type": "a",
+   "text": "Stress At School",
+   "href": "https://youtu.be/dbic3JCX1jo"
+  },
+  {
+   "type": "a",
+   "text": "What Teenagers Want You To Know",
+   "href": "https://youtu.be/fC2z69q3L0o"
+  },
+  {
+   "type": "a",
+   "text": "Students With Depression",
+   "href": "https://youtu.be/CO1fFuH7A-w"
+  },
+  {
+   "type": "a",
+   "text": "Shedding Light on Student Depression",
+   "href": "https://youtu.be/ur8TZf6HWSs"
+  },
+  {
+   "type": "a",
+   "text": "What They Don't Tell You",
+   "href": "https://youtu.be/ieXB-BGxYwg"
+  },
+  {
+   "type": "a",
+   "text": "Depression: Supporting Students",
+   "href": "https://www.nasponline.org/Documents/Resources%20and%20Publications/Handouts/Families%20and%20Educators/Depression_Supporting_Students_at_School.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Child Mind: About Depression and Mood Disorders",
+   "href": "https://youtu.be/Pa_0mdvoMoM"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Mobility"
+  },
+  {
+   "type": "a",
+   "text": "Overcoming Ableism: What You Don't Know as an Able-Bodied Person",
+   "href": "https://www.youtube.com/watch?v=X1xnyVCBYNQ"
+  },
+  {
+   "type": "a",
+   "text": "Changing The Way We Talk About Disability",
+   "href": "https://youtu.be/4WIP1VgPnco"
+  },
+  {
+   "type": "a",
+   "text": "Crip Camp",
+   "href": "https://www.youtube.com/watch?v=OFS8SpwioZ4"
+  },
+  {
+   "type": "a",
+   "text": "Disability Doesn't Mean Invisibility",
+   "href": "https://youtu.be/5uiu2ndZo8c"
+  },
+  {
+   "type": "a",
+   "text": "Finding Where You Belong: A Story of Disability and Education",
+   "href": "https://youtu.be/FVS8bcPUjw8"
+  },
+  {
+   "type": "a",
+   "text": "The Truth About Growing Up Disabled",
+   "href": "https://youtu.be/tvNOzJ7x8qQ"
+  },
+  {
+   "type": "a",
+   "text": "Limited Mobility Fact Sheet for Schools",
+   "href": "https://kidshealth.org/en/parents/mobility-factsheet.html"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "AD(H)D and Executive Function"
+  },
+  {
+   "type": "a",
+   "text": "Cleaning the Kitchen",
+   "href": "https://youtu.be/2fYg5hSgtug"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D in Girls and Women",
+   "href": "https://youtu.be/ybk2IzwV6Zg"
+  },
+  {
+   "type": "a",
+   "text": "Failing at Normal: An AD(H)D Success Story",
+   "href": "https://youtu.be/JiwZQNYlGQI"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D Brain: A Model for the Future",
+   "href": "https://youtu.be/jwMkJ2dmCms"
+  },
+  {
+   "type": "a",
+   "text": "Normalizing Neurodiversity",
+   "href": "https://youtu.be/ybC6uixFXO8"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D Sucks, But Not Really",
+   "href": "https://youtu.be/fWCocjh5aK0"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D From The Inside",
+   "href": "https://youtu.be/VOZyzoj7eh8"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D and Sensory Overload",
+   "href": "https://www.understood.org/articles/adhd-sensory-overload"
+  },
+  {
+   "type": "a",
+   "text": "AD(H)D As A Difference In Cognition",
+   "href": "https://youtu.be/uU6o2_UFSEY"
+  },
+  {
+   "type": "a",
+   "text": "How ADHD ignites Rejection Dysphoria",
+   "href": "https://www.additudemag.com/rejection-sensitive-dysphoria-and-adhd/"
+  },
+  {
+   "type": "a",
+   "text": "Child Mind: Guide to AD(H)D",
+   "href": "https://childmind.org/guide/parents-guide-to-adhd/"
+  },
+  {
+   "type": "a",
+   "text": "Understanding Girls with AD(H)D",
+   "href": "https://childmind.org/article/how-to-help-girls-with-adhd/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Behavior, ODD, and CD"
+  },
+  {
+   "type": "a",
+   "text": "How to Meet Your Child's Difficult Behavior with Compassion",
+   "href": "https://www.youtube.com/watch?v=b2tcLJWNTWM"
+  },
+  {
+   "type": "a",
+   "text": "Child Mind: Behavior Problems and Disorders",
+   "href": "https://childmind.org/topics/behavior-problems/"
+  },
+  {
+   "type": "a",
+   "text": "Breaking the Behavior Code",
+   "href": "https://childmind.org/article/breaking-behavior-code/"
+  },
+  {
+   "type": "a",
+   "text": "AACAP: ODD Guide",
+   "href": "https://www.aacap.org/App_Themes/AACAP/docs/resource_centers/odd/odd_resource_center_odd_guide.pdf"
+  },
+  {
+   "type": "a",
+   "text": "AACAP: Conduct Disorder",
+   "href": "https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Conduct-Disorder-033.aspx"
+  },
+  {
+   "type": "a",
+   "text": "ODD Infographic",
+   "href": "https://manhattanpsychologygroup.com/oppositional-defiant-disorder-symptoms-treatments-infographic/"
+  },
+  {
+   "type": "a",
+   "text": "ODD Fact Sheet for Schools",
+   "href": "https://kidshealth.org/en/parents/odd-factsheet.html"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Neurodiversity and Ableism"
+  },
+  {
+   "type": "a",
+   "text": "Disability, the Truth",
+   "href": "https://www.youtube.com/watch?v=MJ4JOomkyNI"
+  },
+  {
+   "type": "a",
+   "text": "Exploring Ableism: An Invitation to Create an Inclusive Society",
+   "href": "https://youtu.be/EFhL9Bf6a_I"
+  },
+  {
+   "type": "a",
+   "text": "I'm Not Your Inspiration",
+   "href": "https://youtu.be/8K9Gg164Bsw"
+  },
+  {
+   "type": "a",
+   "text": "Invisible Disabilities",
+   "href": "https://youtu.be/e3PXz2KPurw"
+  },
+  {
+   "type": "a",
+   "text": "Not All Disabilities Are Visible",
+   "href": "https://youtu.be/YhXcP65h0sI"
+  },
+  {
+   "type": "a",
+   "text": "The Obstacles of Disabilities",
+   "href": "https://youtu.be/aYAxqHXRbB4"
+  },
+  {
+   "type": "a",
+   "text": "Valuing Differences",
+   "href": "https://kappanonline.org/rentenbach-prislovsky-gabriel-valuing-differences-neurodiversity-classroom/"
+  },
+  {
+   "type": "a",
+   "text": "On Teaching: Celebrating Neurodiversity",
+   "href": "https://www.theatlantic.com/education/archive/2020/09/teaching-celebrating-neurodiversity-classroom/616180/"
+  },
+  {
+   "type": "a",
+   "text": "Neurodiversity and the Pupil \"creeping ...unwillingly to school\"",
+   "href": "https://www.youtube.com/watch?v=GmgWoLGlk1I"
+  },
+  {
+   "type": "a",
+   "text": "Teaching for Neurodiversity",
+   "href": "https://my.chartered.college/impact_article/teaching-for-neurodiversity-training-teachers-to-see-beyond-labels/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Simulations: The Issues"
+  },
+  {
+   "type": "a",
+   "text": "I Won't Pretend that Disability Simulations Work",
+   "href": "http://www.huffingtonpost.com/emily-ladau/i-wont-disability-simulation_b_4936801.html"
+  },
+  {
+   "type": "a",
+   "text": "Online Dyslexia Simulation is Compelling, Powerful, and Wrong",
+   "href": "https://dyslexiaida.org/online-dyslexia-simulation-is-compelling-powerful-and-wrong/"
+  },
+  {
+   "type": "a",
+   "text": "How Disability Simulations Promote Damaging Stereotypes",
+   "href": "https://nfb.org/images/nfb/publications/bm/bm14/bm1401/bm140107.htm"
+  },
+  {
+   "type": "a",
+   "text": "Disability Simulations: What the Research Says",
+   "href": "http://www.disabilitywisdom.com/2017/06/09/disability-simulations-what-does-the-research-say/"
+  }
+ ],
+ "understanding-the-process": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "Understanding the Process"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "IEPs"
+  },
+  {
+   "type": "a",
+   "text": "What is an IEP?",
+   "href": "https://fcsn.org/what-is-an-iep/"
+  },
+  {
+   "type": "a",
+   "text": "Who is on the IEP Team?",
+   "href": "https://fcsn.org/whos-on-the-iep-team/"
+  },
+  {
+   "type": "a",
+   "text": "IEP Process in Massachusetts",
+   "href": "https://www.keystonecollaborative.org/wp-content/uploads/2020/07/MA-IEP-Process.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Parent's Guide to Special Education",
+   "href": "https://fcsn.org/a-parents-guide-to-special-education-english/"
+  },
+  {
+   "type": "a",
+   "text": "MA DESE IEP Forms and Notices",
+   "href": "https://www.doe.mass.edu/specialeducation/iep/default.html"
+  },
+  {
+   "type": "a",
+   "text": "IEP Timelines",
+   "href": "https://westernmassautismdirectory.com/wp-content/uploads/2019/05/Massachusetts-IEP-Timelines.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Responding to the IEP",
+   "href": "https://youtu.be/7OJzAJy8wpU"
+  },
+  {
+   "type": "a",
+   "text": "Special Factors in IEP Development",
+   "href": "https://www.parentcenterhub.org/special-factors/"
+  },
+  {
+   "type": "a",
+   "text": "Annual Goals in the IEP",
+   "href": "https://www.parentcenterhub.org/iepgoals/"
+  },
+  {
+   "type": "a",
+   "text": "IEP Goals: Measurement of Progress",
+   "href": "https://promotingprogress.org/sites/default/files/2020-09/Measuring_Progress_IEP_Tips.pdf"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "504 Plans"
+  },
+  {
+   "type": "a",
+   "text": "What is a 504 Plan?",
+   "href": "https://chadd.org/for-parents/section-504/"
+  },
+  {
+   "type": "a",
+   "text": "Section 504 and the Americans with Disabilities Act",
+   "href": "https://www.doe.mass.edu/specialeducation/families/sec504.html"
+  },
+  {
+   "type": "a",
+   "text": "504 Plans and Medical Needs",
+   "href": "https://www.bmc.org/pediatrics-special-kids-special-help/plan-your-childs-education/504-plan"
+  },
+  {
+   "type": "a",
+   "text": "Parent's Guide to 504 Plans from Brookline Public Schools",
+   "href": "https://www.brookline.k12.ma.us/cms/lib/MA01907509/Centricity/Domain/96/504%20Parent%20Guide.pdf"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "ASSESSMENTS/EVALUATIONS"
+  },
+  {
+   "type": "a",
+   "text": "Requesting an Evaluation",
+   "href": "https://www.parentcenterhub.org/evaluation-2/"
+  },
+  {
+   "type": "a",
+   "text": "Video Guide: Requesting an Evaluation",
+   "href": "https://youtu.be/yGDtWXyRiXA"
+  },
+  {
+   "type": "a",
+   "text": "What Tests Do I Request?",
+   "href": "https://www.wrightslaw.com/howey/tests.state.law.htm"
+  },
+  {
+   "type": "a",
+   "text": "What IEP Tests Should I Ask For?",
+   "href": "https://adayinourshoes.com/iep-evaluations-iee-timeline/"
+  },
+  {
+   "type": "a",
+   "text": "What is Your Bell Curve IQ? Understanding Test Results",
+   "href": "https://www.wrightslaw.com/info/test.bell.curve.iq.htm"
+  },
+  {
+   "type": "a",
+   "text": "Psychometric Conversion Table",
+   "href": "https://resources.finalsite.net/images/v1698938289/ritenourk12mous/ail0gedsrb3jxe6k54hy/psychometric_conversion_table.pdf"
+  },
+  {
+   "type": "a",
+   "text": "What Reading Tests Measure",
+   "href": "https://www.wrightslaw.com/info/test.read.farrall.htm"
+  },
+  {
+   "type": "a",
+   "text": "How to Understand IEP Evaluations",
+   "href": "https://adayinourshoes.com/understanding-common-iep-assessments-iep-eligibility/"
+  },
+  {
+   "type": "a",
+   "text": "Functional Behavioral Assessment",
+   "href": "https://www.ldonline.org/ld-topics/ieps/addressing-student-problem-behavior"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "ELIGIBILITY"
+  },
+  {
+   "type": "a",
+   "text": "IEPs vs 504 Plans",
+   "href": "https://www.understood.org/articles/en/the-difference-between-ieps-and-504-plans"
+  },
+  {
+   "type": "a",
+   "text": "Eligibility Flow Chart",
+   "href": "https://fcsn.org/dese-writing-guide-for-the-iep/"
+  },
+  {
+   "type": "a",
+   "text": "Specific Learning Disability Eligibility",
+   "href": "https://www.mass.gov/doc/specific-learning-disability-eligibility-within-a-tiered-system-of-support/download"
+  },
+  {
+   "type": "a",
+   "text": "13 Disability Catergories under IDEA",
+   "href": "https://www.understood.org/en/articles/conditions-covered-under-idea"
+  },
+  {
+   "type": "a",
+   "text": "Why A Doctor's Note Doesn't Guarantee Services or Eligibility",
+   "href": "https://adayinourshoes.com/no-a-doctors-note-does-not-get-you-services-on-an-iep/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "INDEPENDENT EDUCATIONAL EVALUATIONS (IEES)"
+  },
+  {
+   "type": "a",
+   "text": "Requesting an Outside Evaluation",
+   "href": "https://youtu.be/0C2g6nzdG_0"
+  },
+  {
+   "type": "a",
+   "text": "IEE FAQs",
+   "href": "https://fcsn.org/frequently-asked-questions-about-idependent-education-evaluation-iee/"
+  },
+  {
+   "type": "a",
+   "text": "2025 DESE Guidance on IEEs",
+   "href": "https://www.doe.mass.edu/specialeducation/policy/dese/advisories/memo-sy2024-2025-7.html"
+  },
+  {
+   "type": "a",
+   "text": "Disagree with the District's Evaluation? Let's Talk IEE",
+   "href": "https://www.maseradvocacy.com/blog/2020/11/3/disagree-with-the-districts-evaluationresults-lets-talk-independent-educational-evaluations-iee"
+  },
+  {
+   "type": "a",
+   "text": "Sample Letter Requesting IEE",
+   "href": "https://www.massadvocates.org/resources/lettertemplates"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "MEETINGS"
+  },
+  {
+   "type": "a",
+   "text": "Education Decision Making Roles",
+   "href": "https://fcsn.org/education-decision-making-roles-who-can-sign-what/"
+  },
+  {
+   "type": "a",
+   "text": "IEP Meetings: An Overview",
+   "href": "https://www.understood.org/en/articles/the-iep-meeting-an-overview"
+  },
+  {
+   "type": "a",
+   "text": "Facilitated IEP Meetings",
+   "href": "https://www.cadreworks.org/cadre-continuum/stage-3-conflict/facilitation/facilitated-iep-team-meeting-massachusetts"
+  },
+  {
+   "type": "a",
+   "text": "IEP Meeting Tips",
+   "href": "https://www.legillislaw.com/iep-team-meeting-tips/"
+  },
+  {
+   "type": "a",
+   "text": "Recording Meetings",
+   "href": "http://mail.shorecollaborative.org/profdev/Documenting,%20Recording%20IEP%20Meetings.pdf"
+  },
+  {
+   "type": "a",
+   "text": "How To Request a Meeting",
+   "href": "https://www.understood.org/en/articles/6-steps-to-request-an-iep-meeting"
+  },
+  {
+   "type": "a",
+   "text": "What to do at IEP Meetings",
+   "href": "https://www.wrightslaw.com/info/iep.tips.eason1.htm"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "TRANSITIONS AGES 14-22"
+  },
+  {
+   "type": "a",
+   "text": "Transition Planning Process",
+   "href": "https://fcsn.org/tips-the-secondary-transition-planning-process-english/"
+  },
+  {
+   "type": "a",
+   "text": "Transition Assessment",
+   "href": "https://fcsn.org/tips-the-transition-assessment-english/"
+  },
+  {
+   "type": "a",
+   "text": "Decision Making at Age 18",
+   "href": "https://fcsn.org/tips-decision-making-and-the-age-of-majority-english/"
+  },
+  {
+   "type": "a",
+   "text": "Secondary Services",
+   "href": "https://fcsn.org/tips-secondary-transition-services-english/"
+  },
+  {
+   "type": "a",
+   "text": "Transition Planning Form",
+   "href": "https://fcsn.org/tips-the-transition-planning-form-english/"
+  },
+  {
+   "type": "a",
+   "text": "Graduation with an IEP",
+   "href": "https://fcsn.org/tips-graduation-and-students-with-ieps-english/"
+  },
+  {
+   "type": "a",
+   "text": "Work Support: College Planning",
+   "href": "http://worksupport.com/CCP/"
+  },
+  {
+   "type": "a",
+   "text": "Competitive Integrated Employment",
+   "href": "https://www.perkins.org/resource/what-is-competitive-integrated-employment/"
+  },
+  {
+   "type": "a",
+   "text": "MA Bureau of Transition Planning",
+   "href": "https://www.mass.gov/service-details/bureau-of-transitional-planning"
+  },
+  {
+   "type": "a",
+   "text": "Guide to Transition Planning in MA",
+   "href": "https://fcsn.org/wp-content/uploads/2021/12/transition_guide.pdf"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "ACCOMMODATIONS AND MODIFICATIONS"
+  },
+  {
+   "type": "a",
+   "text": "Difference Between Accommodations and Modifications",
+   "href": "https://www.understood.org/en/articles/the-difference-between-accommodations-and-modifications"
+  },
+  {
+   "type": "a",
+   "text": "Accommodations & Modifications",
+   "href": "https://www.youtube.com/watch?v=O0xdaCEqrU0"
+  },
+  {
+   "type": "a",
+   "text": "Ultimate List of Accommodation Examples",
+   "href": "https://adayinourshoes.com/iep-504-accommodations-strategies/"
+  },
+  {
+   "type": "a",
+   "text": "Understanding Accommodations",
+   "href": "https://www.youtube.com/watch?v=rIraO7BL7UI"
+  },
+  {
+   "type": "a",
+   "text": "Program Modifications and Supports",
+   "href": "https://promotingprogress.org/sites/default/files/2021-05/ProgramMods_IEP_Tips.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Types of Supports for Mental Health Needs",
+   "href": "https://www.nami.org/Blogs/NAMI-Blog/August-2020/3-Types-of-School-Supports-to-Help-Students-with-Mental-Health-Conditions"
+  },
+  {
+   "type": "a",
+   "text": "Classroom Accommodations for Sensory Processing Challenges",
+   "href": "https://www.understood.org/en/articles/at-a-glance-classroom-accommodations-for-sensory-processing-issues"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "MISCELLANEOUS"
+  },
+  {
+   "type": "a",
+   "text": "Important Acronyms",
+   "href": "https://www.theintentionaliep.com/important-special-acronyms/"
+  },
+  {
+   "type": "a",
+   "text": "Navigating Special Education",
+   "href": "https://www.pediatricspec.com/storage/app/media/resources/NavigatingTheSpecialEducationSystemInMassachusetts.pdf"
+  },
+  {
+   "type": "a",
+   "text": "School Counselor Ethics Standards",
+   "href": "https://www.rischoolcounselor.org/resources/EthicalStandards2016%20(1).pdf"
+  },
+  {
+   "type": "a",
+   "text": "IEPs for Behavior Problems",
+   "href": "https://www.wrightslaw.com/howey/iep.special.factors.htm"
+  },
+  {
+   "type": "a",
+   "text": "Your Child's Rights: Behaviors and Schools",
+   "href": "https://www.smartkidswithld.org/getting-help/know-your-childs-rights/your-childs-rights-addressing-behavior-problems/"
+  },
+  {
+   "type": "a",
+   "text": "What Is Least Restrictive Environment?",
+   "href": "https://www.understood.org/en/articles/least-restrictive-environment-lre-what-you-need-to-know"
+  },
+  {
+   "type": "a",
+   "text": "Sample Letters (requesting records, evaluations, copies of evaluations, and IEEs)",
+   "href": "https://www.massadvocates.org/resources/lettertemplates"
+  },
+  {
+   "type": "a",
+   "text": "Sample Language Support Request",
+   "href": "https://static1.squarespace.com/static/5d1cd93071be2d0001425ed6/t/5ed81c84e0ab6309f1304dbb/1591221380510/SampleEmail.RequestingLanguageSupport.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Mental Health and the IEP",
+   "href": "https://www.askresource.org/filesimages/WebinarsPowerPointsForYouTube/Mental%20Health%20and%20the%20IEP.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Special Education Law and ASD",
+   "href": "https://youtu.be/Pa_0mdvoMoM"
+  }
+ ],
+ "helpful-organizations": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "Helpful Organizations"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Autism"
+  },
+  {
+   "type": "a",
+   "text": "Autistic Self Advocacy Network",
+   "href": "https://autisticadvocacy.org/resources/"
+  },
+  {
+   "type": "a",
+   "text": "Association for Autism and Neurodiversity",
+   "href": "https://aane.org/"
+  },
+  {
+   "type": "a",
+   "text": "College Autism Network",
+   "href": "https://collegeautismnetwork.org"
+  },
+  {
+   "type": "a",
+   "text": "MA DDS Autism Support Centers",
+   "href": "https://www.mass.gov/service-details/dds-autism-support-centers"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "AD(H)D"
+  },
+  {
+   "type": "a",
+   "text": "CHADD",
+   "href": "https://chadd.org"
+  },
+  {
+   "type": "a",
+   "text": "ADDitude Magazine",
+   "href": "https://www.additudemag.com"
+  },
+  {
+   "type": "a",
+   "text": "AACAP: ADHD Resource Guide",
+   "href": "https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/ADHD_Resource_Center/Home.aspx"
+  },
+  {
+   "type": "a",
+   "text": "Smart But Scattered Kids",
+   "href": "https://www.smartbutscatteredkids.com"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Dyslexia and Reading Challenges"
+  },
+  {
+   "type": "a",
+   "text": "Reading Rockets",
+   "href": "https://www.readingrockets.org"
+  },
+  {
+   "type": "a",
+   "text": "Orton-Gillingham",
+   "href": "https://www.orton-gillingham.com/"
+  },
+  {
+   "type": "a",
+   "text": "Science of Reading Podcast",
+   "href": "https://amplify.com/science-of-reading-the-podcast/"
+  },
+  {
+   "type": "a",
+   "text": "Decoding Dyslexia MA",
+   "href": "http://www.decodingdyslexiama.org"
+  },
+  {
+   "type": "a",
+   "text": "International Dyslexia Association",
+   "href": "https://dyslexiaida.org"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Anxiety & Mental Health"
+  },
+  {
+   "type": "a",
+   "text": "School Avoidance Alliance",
+   "href": "https://schoolavoidance.org/504-plans-and-school-avoidance/"
+  },
+  {
+   "type": "a",
+   "text": "National Alliance on Mental Health: Schools",
+   "href": "https://www.nami.org/Advocacy/Policy-Priorities/Improving-Health/Mental-Health-in-Schools"
+  },
+  {
+   "type": "a",
+   "text": "Emotional Impairment Definition and Resources",
+   "href": "https://www.doe.mass.edu/specialeducation/families/links/emotional.html"
+  },
+  {
+   "type": "a",
+   "text": "Mental Health America",
+   "href": "https://www.mhanational.org"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Speech & Hearing"
+  },
+  {
+   "type": "a",
+   "text": "American Speech-Language-Hearing Association",
+   "href": "https://www.asha.org"
+  },
+  {
+   "type": "a",
+   "text": "National Deaf Center",
+   "href": "https://www.nationaldeafcenter.org"
+  },
+  {
+   "type": "a",
+   "text": "National Coalition on Auditory Processing Disorders",
+   "href": "https://www.ncapd.org"
+  },
+  {
+   "type": "a",
+   "text": "The Decibels Foundation",
+   "href": "https://www.decibelsfoundation.org/"
+  },
+  {
+   "type": "a",
+   "text": "Apraxia Kids",
+   "href": "https://www.apraxia-kids.org"
+  },
+  {
+   "type": "a",
+   "text": "The Stuttering Foundation",
+   "href": "https://www.stutteringhelp.org"
+  },
+  {
+   "type": "a",
+   "text": "Word finding difficulties",
+   "href": "http://www.wordfinding.com/index.html"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Intellectual Disability (ID)"
+  },
+  {
+   "type": "a",
+   "text": "American Association on Intellectual and Developmental Disabilities",
+   "href": "https://www.aaidd.org"
+  },
+  {
+   "type": "a",
+   "text": "Arc of Massachusetts",
+   "href": "http://arcmass.org"
+  },
+  {
+   "type": "a",
+   "text": "Special Olympics MA",
+   "href": "https://www.specialolympicsma.org"
+  },
+  {
+   "type": "a",
+   "text": "Massachusetts Down Syndrome Congress",
+   "href": "https://mdsc.org"
+  },
+  {
+   "type": "a",
+   "text": "National Fragile X Foundation",
+   "href": "https://fragilex.org"
+  },
+  {
+   "type": "a",
+   "text": "Fetal Alcohol Spectrum Disorders United",
+   "href": "https://fasdunited.org/fasd/"
+  },
+  {
+   "type": "a",
+   "text": "Prader-Willi Syndrome Association USA",
+   "href": "https://www.pwsausa.org"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Diabetes"
+  },
+  {
+   "type": "a",
+   "text": "American Diabetes Association: Safe at School",
+   "href": "https://www.diabetes.org/tools-support/know-your-rights/safe-at-school-state-laws"
+  },
+  {
+   "type": "a",
+   "text": "CDC: Managing Diabetes at School",
+   "href": "https://www.cdc.gov/diabetes/caring/managing-diabetes-at-school.html?CDC_AAref_Val=https://www.cdc.gov/diabetes/library/features/managing-diabetes-at-school.html"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Mobility"
+  },
+  {
+   "type": "a",
+   "text": "Mobility International: USA",
+   "href": "https://www.miusa.org"
+  },
+  {
+   "type": "a",
+   "text": "Access Advocates: ADA Compliance",
+   "href": "http://accessadvocates.com/how-it-works/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Visual Impairment"
+  },
+  {
+   "type": "a",
+   "text": "American Federation for the Blind",
+   "href": "https://www.afb.org/"
+  },
+  {
+   "type": "a",
+   "text": "American Printing House for the Blind",
+   "href": "https://www.aph.org"
+  },
+  {
+   "type": "a",
+   "text": "Vision of Children",
+   "href": "https://www.visionofchildren.org/"
+  },
+  {
+   "type": "a",
+   "text": "APH Connect Center",
+   "href": "https://aphconnectcenter.org/familyconnect/education/"
+  },
+  {
+   "type": "a",
+   "text": "American Council of the Blind",
+   "href": "https://www.acb.org/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Sensory Processing Disorder"
+  },
+  {
+   "type": "a",
+   "text": "STAR Institute for Sensory Processing",
+   "href": "https://sensoryhealth.org/basic/understanding-sensory-processing-disorder"
+  },
+  {
+   "type": "a",
+   "text": "Psychology Today: SPD",
+   "href": "https://www.psychologytoday.com/us/basics/sensory-processing-disorder"
+  },
+  {
+   "type": "a",
+   "text": "SPD Parent Support Community",
+   "href": "https://sensoryprocessingdisorderparentsupport.com"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "General Disability Rights"
+  },
+  {
+   "type": "a",
+   "text": "Foundations for Divergent Minds",
+   "href": "https://www.divergentminds.org"
+  },
+  {
+   "type": "a",
+   "text": "National Center for Learning Disabilities",
+   "href": "https://www.ncld.org"
+  },
+  {
+   "type": "a",
+   "text": "LD Online",
+   "href": "https://www.ldonline.org"
+  },
+  {
+   "type": "a",
+   "text": "Learning Disabilities Association of America",
+   "href": "https://ldaamerica.org/"
+  },
+  {
+   "type": "a",
+   "text": "LD Resources Foundation",
+   "href": "https://www.ldrfa.org/know-your-rights-become-your-own-self-advocate/"
+  },
+  {
+   "type": "a",
+   "text": "Center for Disability Rights",
+   "href": "https://cdrnys.org/advocacy/"
+  },
+  {
+   "type": "a",
+   "text": "National Disability Rights Network",
+   "href": "https://www.ndrn.org"
+  },
+  {
+   "type": "a",
+   "text": "Disability Rights Education & Defense Fund",
+   "href": "https://dredf.org"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Behavior, ODD, & CD"
+  },
+  {
+   "type": "a",
+   "text": "Teacher-Child Interaction Training",
+   "href": "https://www.tcit.org"
+  },
+  {
+   "type": "a",
+   "text": "​AACAP ODD Resource Center",
+   "href": "https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/Oppositional_Defiant_Disorder_Resource_Center/Home.aspx"
+  }
+ ],
+ "state-and-federal-guidance": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "State and Federal Guidance"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Federal and State Laws, Local Policy"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "Section 504 and ADA"
+  },
+  {
+   "type": "a",
+   "text": "Section 504 and ADA",
+   "href": "https://www.doe.mass.edu/specialeducation/families/sec504.html"
+  },
+  {
+   "type": "a",
+   "text": "504, the ADA, and Public Education",
+   "href": "https://www.ldonline.org/ld-topics/special-education/section-504-ada-and-public-schools"
+  },
+  {
+   "type": "a",
+   "text": "Disability Rights Laws & Public Education",
+   "href": "https://adata.org/factsheet/disability-rights-laws-public-primary-and-secondary-education-how-do-they-relate"
+  },
+  {
+   "type": "a",
+   "text": "ADA and Education Accommodation",
+   "href": "https://www.stimmel-law.com/en/articles/americans-disabilities-act-ada-and-educational-accomodation"
+  },
+  {
+   "type": "a",
+   "text": "ADA FAQs from OCR",
+   "href": "https://www.ada.gov/doe_doj_eff_comm/doe_doj_eff_comm_faqs.htm"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "IDEA and FAPE"
+  },
+  {
+   "type": "a",
+   "text": "What is IDEA?",
+   "href": "https://fcsn.org/what-is-i-d-e-a/"
+  },
+  {
+   "type": "a",
+   "text": "10 Procedural Safeguards in IDEA",
+   "href": "https://www.understood.org/en/articles/10-key-procedural-safeguards-in-idea"
+  },
+  {
+   "type": "a",
+   "text": "Access to the General Education Curriculum",
+   "href": "https://fcsn.org/access-to-the-general-curriculum/"
+  },
+  {
+   "type": "a",
+   "text": "Complete Guide to Understanding FAPE",
+   "href": "https://www.sandiegospecialeducationattorney.com/the-complete-guide-to-understanding-fape-free-appropriate-public-education"
+  },
+  {
+   "type": "a",
+   "text": "Endrew F. Case: Defining FAPE",
+   "href": "https://www.understood.org/articles/endrew-f-case-decided-supreme-court-rules-on-how-much-benefit-ieps-must-provide"
+  },
+  {
+   "type": "a",
+   "text": "FAPE Under Section 504",
+   "href": "https://www.ed.gov/laws-and-policy/civil-rights-laws/disability-discrimination/frequently-asked-questions-section-504-free-appropriate-public-education-fape"
+  },
+  {
+   "type": "a",
+   "text": "FAPE under IDEA",
+   "href": "https://www.wrightslaw.com/info/fape.index.htm"
+  },
+  {
+   "type": "a",
+   "text": "Lessons from a Denial of FAPE",
+   "href": "https://spedlawblog.com/2021/01/17/lessons-from-a-denial-of-fape/"
+  },
+  {
+   "type": "a",
+   "text": "When Procedural Violations Add Up to Denial of FAPE",
+   "href": "https://www.johnruelaw.com/single-post/2016/08/08/when-procedural-violations-add-up-to-a-denial-of-fape/"
+  },
+  {
+   "type": "a",
+   "text": "Examples of IEP Violations",
+   "href": "https://personalizedlearningforall.com/examples-of-procedural-substantive-violations-committed-by-school-districts/"
+  },
+  {
+   "type": "a",
+   "text": "Substantive vs Procedural Violations under IDEA",
+   "href": "https://www.berneylaw.com/2017/11/12/substantive-vs-procedural-violations-idea/"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "Child Find"
+  },
+  {
+   "type": "a",
+   "text": "What is Child Find?",
+   "href": "https://www.understood.org/en/articles/child-find-what-it-is-and-how-it-works"
+  },
+  {
+   "type": "a",
+   "text": "Wright's Law: Child Find",
+   "href": "https://www.wrightslaw.com/info/child.find.index.htm"
+  },
+  {
+   "type": "a",
+   "text": "Early Intervention and Child Find",
+   "href": "https://www.wrightslaw.com/info/child.find.index.htm"
+  },
+  {
+   "type": "a",
+   "text": "IDEA Section 300.111 Child Find",
+   "href": "https://sites.ed.gov/idea/regs/b/b/300.111"
+  },
+  {
+   "type": "a",
+   "text": "MA DESE Child Find Resources",
+   "href": "https://www.doe.mass.edu/sped/ta/docs/child-find-resources/"
+  },
+  {
+   "type": "a",
+   "text": "Child Find Mandate: What It Means to You",
+   "href": "https://www.wrightslaw.com/info/child.find.mandate.htm"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "FERPA"
+  },
+  {
+   "type": "a",
+   "text": "Family Educational Rights & Privacy Act",
+   "href": "https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html"
+  },
+  {
+   "type": "a",
+   "text": "APA FERPA Overview",
+   "href": "https://www.apa.org/pi/disability/dart/legal/ferpa"
+  },
+  {
+   "type": "a",
+   "text": "FAQs about Privacy & Confidentiality",
+   "href": "https://www.wrightslaw.com/info/ferpa.osep.observe.htm"
+  },
+  {
+   "type": "a",
+   "text": "Parent Guide to FERPA",
+   "href": "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/A%20parent%20guide%20to%20ferpa_508.pdf"
+  },
+  {
+   "type": "a",
+   "text": "The Right to Inspect and Review",
+   "href": "https://studentprivacycompass.org/applyingferpa1/"
+  },
+  {
+   "type": "a",
+   "text": "The Right to Seek to Amend",
+   "href": "https://studentprivacycompass.org/applyingferpa2/"
+  },
+  {
+   "type": "a",
+   "text": "PPRA: Protection of Pupil Rights Amendment",
+   "href": "https://studentprivacycompass.org/faqs-ppra/"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "MA Educational Law"
+  },
+  {
+   "type": "a",
+   "text": "MA Laws about Education",
+   "href": "https://www.mass.gov/info-details/massachusetts-law-about-education"
+  },
+  {
+   "type": "a",
+   "text": "Chapter 71B: Children with Special Needs",
+   "href": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXII/Chapter71b"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 23 Student Records",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr23.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 26 Access to Equal Educational Opportunity",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr26.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 28 Special Education",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr28.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 46 Prevention of Physical Restraint",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr46.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 49 Notification of Bullying",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr49.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 50 Educational Collaboratives",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr50.html"
+  },
+  {
+   "type": "a",
+   "text": "603 CMR 53 Student Discipline ​​​",
+   "href": "https://www.doe.mass.edu/lawsregs/603cmr53.html"
+  },
+  {
+   "type": "h",
+   "level": 3,
+   "text": "Local Policy"
+  },
+  {
+   "type": "a",
+   "text": "GD District Policy Manual",
+   "href": "https://z2policy.ctspublish.com/masc/browse/grotondunstableset/welcome/root"
+  }
+ ],
+ "advocacy": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "Advocacy"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Being a Parent Advocate"
+  },
+  {
+   "type": "a",
+   "text": "Parent Advocacy at School: 8 Steps",
+   "href": "https://www.understood.org/en/articles/parent-advocacy-steps"
+  },
+  {
+   "type": "a",
+   "text": "Be an Effective Advocate for your Child",
+   "href": "https://childmind.org/article/being-an-effective-advocate-for-your-child/"
+  },
+  {
+   "type": "a",
+   "text": "10 Actionable Tips",
+   "href": "https://amyboyington.com/childs-advocate"
+  },
+  {
+   "type": "a",
+   "text": "Advocating for Your Child: Getting Started",
+   "href": "https://www.wrightslaw.com/advoc/articles/advocacy.intro.htm"
+  },
+  {
+   "type": "a",
+   "text": "Advocacy: 9 Rules of Thumb",
+   "href": "https://www.wrightslaw.com/info/advo.9rules.crabtree.htm"
+  },
+  {
+   "type": "a",
+   "text": "Endrew F Advocacy Talking Points",
+   "href": "https://cdn-assets.understood.org/p0qf7j048i0q/7v7DN882jgzjigGEs17gAT/16ec8e00335cfcf97e5afd8e4c8275c8/Endrew_F_Talking_Points_Understood.pdf"
+  },
+  {
+   "type": "a",
+   "text": "12 Rules for Writing Great Letters",
+   "href": "https://www.wrightslaw.com/advoc/articles/12rules_letters.htm"
+  },
+  {
+   "type": "a",
+   "text": "Filing Complaints",
+   "href": "https://www.wrightslaw.com/howey/complaints.tips.pdf"
+  },
+  {
+   "type": "a",
+   "text": "How to Review Your Child's Educational Record",
+   "href": "https://www.wrightslaw.com/blog/14-tips-reviewing-your-childs-educational-record/"
+  },
+  {
+   "type": "a",
+   "text": "Back To School: 10 Tips for a Good Year",
+   "href": "https://www.wrightslaw.com/howey/10tips.sch.yr.htm"
+  },
+  {
+   "type": "a",
+   "text": "What Happens When You Reject an IEP?",
+   "href": "https://www.nobleeducationlaw.com/blog/what-happens-after-you-reject-an-iep"
+  },
+  {
+   "type": "a",
+   "text": "Resolving Disputes with Schools",
+   "href": "https://fcsn.org/resolving-special-education-disagreements-with-the-school/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Youth Advocacy"
+  },
+  {
+   "type": "a",
+   "text": "Student Self Advocacy and IEP Meetings",
+   "href": "https://youtu.be/94sUNUYasZg"
+  },
+  {
+   "type": "a",
+   "text": "What is Self Advocacy?",
+   "href": "https://fcsn.org/what-is-self-advocacy-and-why-is-it-important/"
+  },
+  {
+   "type": "a",
+   "text": "YO! Disabled and Proud",
+   "href": "https://yodisabledproud.org"
+  },
+  {
+   "type": "a",
+   "text": "NCLD Youth",
+   "href": "http://www.ncld-youth.info/index.php?id=01"
+  },
+  {
+   "type": "a",
+   "text": "National Association of the Deaf Youth Leadership",
+   "href": "https://www.nad.org/youth/"
+  },
+  {
+   "type": "a",
+   "text": "MA Advocates Youth Leaders Fellowship",
+   "href": "https://www.massadvocates.org/young-adult-leaders-fellowship-program"
+  },
+  {
+   "type": "a",
+   "text": "Youth Celebrate Diversity",
+   "href": "https://ycdiversity.org"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Restraint and Seclusion"
+  },
+  {
+   "type": "a",
+   "text": "Use of Restraint and Seclusion",
+   "href": "https://www2.ed.gov/about/offices/list/ocr/docs/20190725-students-with-disabilities-and-use-of-rs.pdf"
+  },
+  {
+   "type": "a",
+   "text": "MA School Restraint & Seclusion Laws",
+   "href": "https://www.dlc-ma.org/wp-content/uploads/2017/12/Special-Education-Restraint-and-Seclusion.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Dear Colleague Letter on Restraint and Seclusion",
+   "href": "https://www2.ed.gov/about/offices/list/ocr/letters/colleague-201612-504-restraint-seclusion-ps.pdf"
+  },
+  {
+   "type": "a",
+   "text": "\"No Restraint\" Sample Letter",
+   "href": "https://www.bridges4kids.org/IEP/NoRestraintLetter.html#top"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Discipline"
+  },
+  {
+   "type": "a",
+   "text": "Discipline Rights",
+   "href": "https://www.understood.org/en/articles/school-discipline-rights-ieps-504-plans"
+  },
+  {
+   "type": "a",
+   "text": "504 Discipline Guidance",
+   "href": "https://www.ed.gov/media/document/504-discipline-guidance-2022-21258.pdf"
+  },
+  {
+   "type": "a",
+   "text": "What is a Manifest Determination?",
+   "href": "https://www.manifestationdetermination.com/what-is-a-manifestation-determination/"
+  },
+  {
+   "type": "a",
+   "text": "School Discipline Laws in MA",
+   "href": "https://www.dlc-ma.org/wp-content/uploads/2018/07/School-Discipline-Laws-in-Massachusetts.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Suspensions, Expulsions, and IEPs",
+   "href": "https://www.wrightslaw.com/info/discipl.suspend.crabtree.htm"
+  },
+  {
+   "type": "a",
+   "text": "IDEA Guidance on Discipline 2009",
+   "href": "https://sites.ed.gov/idea/files/idea/policy/speced/guid/idea/discipline-q-a.pdf"
+  },
+  {
+   "type": "a",
+   "text": "Discipline and 504s",
+   "href": "https://www.mbm-law.net/insights/student-discipline-section-504/"
+  },
+  {
+   "type": "h",
+   "level": 2,
+   "text": "Bullying"
+  },
+  {
+   "type": "a",
+   "text": "Bullying: Denial of FAPE?",
+   "href": "https://www.mbm-law.net/insights/bullying-no-special-relationship-but-might-deny-fape/"
+  },
+  {
+   "type": "a",
+   "text": "Bullying CAN Lead to a Denial of FAPE",
+   "href": "https://nmplabor.com/bullying-can-result-in-a-denial-of-fape-for-students-with-disabilities/"
+  },
+  {
+   "type": "a",
+   "text": "Prevention & Intervention MA Guidance 2012",
+   "href": "https://www.doe.mass.edu/sped/advisories/11_2ta.html"
+  },
+  {
+   "type": "a",
+   "text": "MA Advocates for Children: Bullying",
+   "href": "https://www.massadvocates.org/resources-bullying?rq=bullying"
+  }
+ ],
+ "by-laws": [
+  {
+   "type": "h",
+   "level": 1,
+   "text": "GD SEPAC By-Laws"
+  }
+ ]
+}
