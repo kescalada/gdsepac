@@ -183,8 +183,16 @@ const PAGES = {
       </section>
 
       <section class="card upcoming">
-        <h2>Upcoming Events</h2>
+        <h2>Upcoming GD SEPAC Events</h2>
         <p class="muted">No events at the moment.</p>
+      </section>
+
+      <section class="card upcoming">
+        <h2>Upcoming MassPAC Workshops</h2>
+        <p>MassPAC workshop offerings are available to members of the GDRSD community. View the
+        current schedule on the
+        <a href="https://fcsn.org/calendar/" target="_blank" rel="noopener">FCSN events calendar</a>.</p>
+        <p><a class="btn btn-outline" href="https://fcsn.org/calendar/" target="_blank" rel="noopener">View MassPAC Workshops</a></p>
       </section>
     `,
   },
