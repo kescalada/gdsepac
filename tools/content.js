@@ -45,12 +45,14 @@ const PAGES = {
       <section class="quicklinks">
         <h2>Explore</h2>
         <div class="quicklink-grid">
-          <a href="about-us-contact.html"><strong>About Us &amp; Contact</strong><span>Who we are, our officers, and liaisons.</span></a>
+          <a href="about-us-contact.html"><strong>About Us &amp; Contact</strong><span>Who we are, our board, and liaisons.</span></a>
           <a href="meetings-events.html"><strong>Meetings &amp; Events</strong><span>Gatherings and presentations throughout the year.</span></a>
-          <a href="understanding-the-process.html"><strong>Understanding the Process</strong><span>IEPs, 504s, evaluations, eligibility, and more.</span></a>
           <a href="about-disability.html"><strong>About Disability</strong><span>Learn from the disabled community.</span></a>
-          <a href="helpful-organizations.html"><strong>Helpful Organizations</strong><span>National and local support organizations.</span></a>
+          <a href="understanding-the-process.html"><strong>Understanding the Process</strong><span>IEPs, 504s, evaluations, eligibility, and more.</span></a>
+          <a href="helpful-organizations.html"><strong>Helpful Organizations</strong><span>National, state, and local support organizations.</span></a>
+          <a href="state-and-federal-guidance.html"><strong>State and Federal Guidance</strong><span>The laws and rights that protect your student.</span></a>
           <a href="advocacy.html"><strong>Advocacy</strong><span>Take action in the best interest of children.</span></a>
+          <a href="by-laws.html"><strong>By-Laws</strong><span>How the SEPAC is organized and governed.</span></a>
         </div>
       </section>
     `,
