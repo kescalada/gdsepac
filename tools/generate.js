@@ -34,8 +34,7 @@ function layout({ active, title, hero, body }) {
     ? `  <section class="hero">
     <div class="hero-inner">
       <img class="hero-logo" src="assets/home-header.webp" alt="Groton Dunstable: Our World, Our Communities, Our Schools — Together We Achieve">
-      <p class="eyebrow">Groton Dunstable SEPAC</p>
-      <h1>GD SEPAC</h1>
+      <h1>Groton Dunstable SEPAC</h1>
       <p class="tagline">IEP and 504 Together</p>
     </div>
   </section>`
@@ -58,7 +57,7 @@ function layout({ active, title, hero, body }) {
     <div class="brand">
       <a href="index.html" class="brand-link">
         <span class="brand-mark"><img src="assets/home-header.webp" alt="Groton Dunstable SEPAC logo"></span>
-        <span class="brand-text"><strong>GD SEPAC</strong><small>Groton Dunstable</small></span>
+        <span class="brand-text"><strong>Groton Dunstable SEPAC</strong></span>
       </a>
     </div>
 ${nav(active)}
@@ -73,7 +72,7 @@ ${body}
   <footer class="site-footer">
     <div class="container footer-inner">
       <p><a href="mailto:${EMAIL}">${EMAIL}</a> &nbsp;&middot;&nbsp; <a href="${FACEBOOK}" target="_blank" rel="noopener">Facebook</a></p>
-      <p class="copyright">&copy;${YEAR} GD SEPAC. Originally created with Wix; rebuilt as a static site.</p>
+      <p class="copyright">&copy;${YEAR} GD SEPAC.</p>
     </div>
   </footer>
 </body>
