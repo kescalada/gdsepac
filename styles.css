@@ -70,8 +70,12 @@ a:hover { text-decoration-color: #1a1a1a; }
   border-bottom: 1px solid var(--line);
   color: var(--ink); text-align: center;
 }
-.hero-inner { max-width: var(--maxw); margin: 0 auto; padding: 48px 20px 52px; }
-.hero .hero-logo { width: 190px; height: 190px; object-fit: contain; margin: 0 auto 20px; display: block; }
+.hero-inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 48px 20px 52px;
+  display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap;
+}
+.hero .hero-titles { text-align: left; }
+.hero .hero-logo { width: 190px; height: 190px; object-fit: contain; display: block; flex: none; }
 .hero .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; color: var(--muted); margin: 0 0 8px; }
 .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); margin: 0; letter-spacing: .5px; color: var(--ink); }
 .hero .tagline { font-size: 1.15rem; color: var(--muted); margin: 10px 0 0; }
@@ -169,4 +173,9 @@ main { padding: 36px 0 56px; }
   }
   .nav-toggle:checked ~ .nav .nav-list { display: flex; }
   .people .role { min-width: 0; display: block; }
+}
+
+@media (max-width: 600px) {
+  .hero-inner { flex-direction: column; gap: 20px; }
+  .hero .hero-titles { text-align: center; }
 }
