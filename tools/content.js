@@ -108,12 +108,13 @@ const PAGES = {
       </section>
 
       <section class="card">
-        <h2>Officers</h2>
+        <h2>Board of Directors</h2>
         <ul class="people">
-          <li><span class="role">Co-Chair</span> Lori Saafi</li>
-          <li><span class="role">Co-Chair</span> Kristyn MacInnis</li>
-          <li><span class="role">Secretary</span> Maryellen Michelson</li>
+          <li><span class="role">Chair and School Committee Liaison</span> Jolie Reijnders</li>
+          <li><span class="role">Vice Chair</span> Kristyn MacInnis</li>
+          <li><span class="role">Secretary</span> MaryEllen Michelson</li>
           <li><span class="role">Treasurer</span> Katie Cobb Leonard</li>
+          <li><span class="role">DEI Liaison and Website Support</span> Kelley Escalada</li>
         </ul>
       </section>
 
@@ -129,17 +130,6 @@ const PAGES = {
           <li><span class="role">Swallow Union</span> Kelley Escalada</li>
           <li><span class="role">Groton Dunstable Middle School</span> Kristyn MacInnis</li>
           <li><span class="role">Groton Dunstable High School</span> Katie Cobb Leonard</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>District and Community Liaisons</h2>
-        <p>SEPAC is invested in the communities of Groton and Dunstable and has liaisons who serve
-        as community-based parent contacts that send communications and announcements to our
-        communities and speak out for families and disabled children.</p>
-        <ul class="people">
-          <li><span class="role">School Committee</span> Jolie Reijnders</li>
-          <li><span class="role">Diversity, Equity, and Inclusion (DEI) Advisory</span> Kelley Escalada</li>
         </ul>
       </section>
 
