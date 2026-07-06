@@ -41,6 +41,19 @@ module.exports = function (eleventyConfig) {
   // Render a Markdown string to HTML (for frontmatter prose like `intro`).
   eleventyConfig.addFilter("md", (str) => (str ? mdInline.render(str) : ""));
 
+  // Encode every character of a string as a numeric HTML entity (`&#NN;`).
+  // Used for the contact address (`site.EMAIL`) so it never appears as
+  // plaintext in the served HTML, defeating naive email-harvesting scrapers.
+  // Browsers decode the entities transparently, so the visible text and the
+  // `mailto:` href both still work with no JavaScript. Apply `| safe` at the
+  // call site so Nunjucks emits the entities verbatim instead of escaping `&`.
+  eleventyConfig.addFilter("obfuscateEmail", (str) =>
+    String(str || "")
+      .split("")
+      .map((ch) => `&#${ch.charCodeAt(0)};`)
+      .join("")
+  );
+
   // --- Transform 1: reconstruct boxed sections on directory / by-laws pages ---
   // A layout wraps the page body in <div data-sections="CLASS">…</div>. Here we
   // split that body at each <h2> and wrap each chunk in <section class="CLASS">,

@@ -24,7 +24,7 @@ You can read more about how we are organized in our [by-laws](/by-laws/).
 
 Currently, the best way to reach SEPAC is via email:
 
-<p><a class="btn" href="mailto:{{ site.EMAIL }}">Email {{ site.EMAIL }}</a></p>
+<p><a class="btn" href="{{ ('mailto:' + site.EMAIL) | obfuscateEmail | safe }}">Email {{ site.EMAIL | obfuscateEmail | safe }}</a></p>
 :::
 
 ::: box card

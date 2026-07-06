@@ -15,8 +15,9 @@ The five "directory" pages (About Disability, Understanding the Process, Helpful
 State and Federal Guidance, Advocacy) are collections of grouped external resource links — over
 300 links in total.
 
-The original site's Wix contact **form** is a `mailto:` link to **GDSEPAC2@gmail.com**, since a
-static site has no backend to receive form submissions.
+The original site's Wix contact **form** is a `mailto:` link to the SEPAC contact address
+(defined once as `EMAIL` in `src/_data/site.js`), since a static site has no backend to receive
+form submissions.
 
 ## Editing content
 

@@ -27,7 +27,7 @@ layout: base.njk
       <section class="card contact-cta">
         <h2>Contact Us</h2>
         <p>The best way to reach us is by email.</p>
-        <p><a class="btn" href="mailto:{{ site.EMAIL }}">Email {{ site.EMAIL }}</a></p>
+        <p><a class="btn" href="{{ ('mailto:' + site.EMAIL) | obfuscateEmail | safe }}">Email {{ site.EMAIL | obfuscateEmail | safe }}</a></p>
         <p>You can also <a href="{{ site.FACEBOOK }}" target="_blank" rel="noopener">join us on Facebook</a>.</p>
       </section>
 
