@@ -39,8 +39,10 @@ jobs:
 
       # Only runs when the PR actually added external links. lychee reads the URL list
       # from added-links.txt; example.* placeholder domains (used in the events.yaml
-      # docs) are excluded, and 429 (rate-limited) is accepted so a busy host isn't a
-      # false failure.
+      # docs) are excluded. The --accept set matches external-links.yml: bot-block
+      # responses (403/500/428/503/999) and rate-limits (429) count as reachable, so a
+      # link to a WAF-protected resource site can't fail the PR — only a genuinely-gone
+      # link (404/410, DNS/connection failure) does.
       - name: Check the new links
         if: steps.collect.outputs.count != '0'
         uses: lycheeverse/lychee-action@v2.8.0
@@ -48,7 +50,7 @@ jobs:
           args: >-
             --no-progress
             --exclude example\.(com|net|org)
-            --accept 200..=299,429
+            --accept 200..=299,403,428,429,500,503,999
             --max-retries 2
             added-links.txt
           # This IS a gate: fail the PR when a newly-added link is broken.

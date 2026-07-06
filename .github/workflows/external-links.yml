@@ -49,14 +49,20 @@ jobs:
           # --root-dir resolves internal root-relative links to files under _site/; the
           # --scheme filter then keeps only http/https links, so those resolved internal
           # links are excluded rather than checked. Net effect: a purely EXTERNAL check
-          # with no internal-resolution noise. 429 (rate-limited) is accepted alongside
-          # 2xx so a busy host isn't reported as broken.
+          # with no internal-resolution noise.
+          #
+          # --accept treats bot-block responses as reachable, not broken. Many resource
+          # sites (mass.gov, nfb.org, aane.org, aacap.org, Cloudflare-fronted hosts) serve
+          # the page to a real browser but reject automated checkers with 403/500/428/503
+          # (or 999) based on TLS fingerprint / JS challenge — which no user-agent override
+          # can satisfy. 429 (rate-limited) is likewise transient. Only genuinely-gone
+          # results (404/410, DNS/connection failures) are left to fail.
           args: >-
             --no-progress
             --root-dir ${{ github.workspace }}/_site
             --scheme https
             --scheme http
-            --accept 200..=299,429
+            --accept 200..=299,403,428,429,500,503,999
             --max-retries 2
             './_site/**/*.html'
           format: markdown
