@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meetings & Events data (events.yaml)",
+  "description": "A list of upcoming SEPAC events. Each event needs a title and a date; everything else is optional.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["title", "date"],
+    "additionalProperties": false,
+    "properties": {
+      "title": { "type": "string", "minLength": 1 },
+      "date": { "type": "string", "minLength": 1 },
+      "location": { "type": "string", "minLength": 1 },
+      "description": { "type": "string", "minLength": 1 },
+      "image": {
+        "type": "object",
+        "required": ["src", "alt"],
+        "additionalProperties": false,
+        "properties": {
+          "src": { "type": "string", "pattern": "^/assets/.+" },
+          "alt": { "type": "string" }
+        }
+      },
+      "link": {
+        "type": "object",
+        "required": ["url", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "minLength": 1 },
+          "label": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

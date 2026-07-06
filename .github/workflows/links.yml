@@ -1,0 +1,45 @@
+name: Link and asset check
+
+# Catches broken LOCAL references in the built site — missing /assets/… images
+# (including event images from events.yaml) and dead internal page links — before
+# they ship. Independent of the schema validation in deploy.yml / pr-preview.yml.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      # Build with a ROOT path prefix (not the production /gdsepac/) so the
+      # root-relative /assets/… and /page/ URLs resolve directly under _site/.
+      # The /gdsepac/ prefix would nest them and cause false "not found" reports.
+      - name: Build site with a root path prefix
+        run: npx eleventy
+        env:
+          PATH_PREFIX: /
+      # Check every built page for broken references. `--offline` restricts the
+      # HARD FAILURE to local/internal targets: it verifies that each root-relative
+      # link and /assets/… file actually exists under _site/, and skips external
+      # URLs entirely. External-link liveness is deliberately NOT a gate here — the
+      # resource pages already carry many third-party links that 404/403/rate-limit
+      # intermittently, which would make this job flaky rather than meaningful.
+      # `--root-dir` resolves root-relative (/foo) links against the built site.
+      - name: Check links and assets
+        uses: lycheeverse/lychee-action@v2.8.0
+        with:
+          args: >-
+            --offline
+            --root-dir ${{ github.workspace }}/_site
+            --no-progress
+            './_site/**/*.html'
+          fail: true
