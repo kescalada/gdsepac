@@ -132,6 +132,15 @@ main { padding: 36px 0 56px; }
 .defs dd { margin: 4px 0 0; }
 .upcoming { background: var(--soft); }
 
+/* Events (Meetings & Events page) */
+.events { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.event { display: flex; gap: 18px; align-items: flex-start; }
+.event-media { flex: 0 0 200px; width: 200px; margin: 0; }
+.event-media img { width: 100%; height: auto; display: block; border-radius: var(--radius); }
+.event-body { flex: 1; }
+.event-title { margin: 0 0 4px; color: var(--brand-dark); }
+.event-meta { margin: 0 0 8px; color: var(--muted); font-size: .92rem; }
+
 /* Quick links (home) */
 .quicklinks h2 { color: var(--brand-dark); }
 .quicklink-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
@@ -187,6 +196,8 @@ main { padding: 36px 0 56px; }
   }
   .js .nav-list.open { display: flex; }
   .people .role { min-width: 0; display: block; }
+  .event { flex-direction: column; }
+  .event-media { flex-basis: auto; width: 100%; }
 }
 
 @media (max-width: 600px) {
