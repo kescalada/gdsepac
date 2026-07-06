@@ -52,7 +52,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p><a href="mailto:{{ site.EMAIL }}">{{ site.EMAIL }}</a> &nbsp;&middot;&nbsp; <a href="{{ site.FACEBOOK }}" target="_blank" rel="noopener">Facebook</a></p>
+      <p><a href="{{ ('mailto:' + site.EMAIL) | obfuscateEmail | safe }}">{{ site.EMAIL | obfuscateEmail | safe }}</a> &nbsp;&middot;&nbsp; <a href="{{ site.FACEBOOK }}" target="_blank" rel="noopener">Facebook</a></p>
       <p class="copyright">&copy;{{ site.year }} GD SEPAC.</p>
     </div>
   </footer>
