@@ -1,0 +1,20 @@
+# .lycheeignore — external links to SKIP in the automated link checks.
+#
+# Add a line here to silence a link that the checker reports as broken but that
+# actually works in a browser (a "false positive"). Both the weekly report and the
+# per-PR link check read this file, so a muted link stops being reported everywhere.
+#
+# How to add one:
+#   * Paste the full URL on its own line (easiest, and exact).
+#   * Lines starting with # are comments and are ignored.
+#   * Each line is matched as a pattern, so a plain URL matches itself. A "." matches
+#     any character, which is harmless for a specific URL; only escape it (\.) if you
+#     want to be strict.
+#
+# Prefer fixing or removing a genuinely-dead link in the content over ignoring it.
+# Ignore is for sites that block automated checkers in a way status codes can't capture
+# (e.g. a TCP reset), not for links that are actually gone.
+
+# worksupport.com resets the connection for automated checkers but loads fine in a
+# browser (verified returning HTTP 200). Bot protection at the TCP level, not a code.
+http://worksupport.com/CCP/
