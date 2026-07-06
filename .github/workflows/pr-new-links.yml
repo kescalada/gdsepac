@@ -1,0 +1,55 @@
+name: Verify new external links (PR)
+
+# On every pull request, verify only the EXTERNAL links this PR ADDS. We diff the
+# content in src/ against the PR's base, extract the newly-added http/https URLs, and
+# check just those with lychee. Pre-existing links (including any already-broken ones)
+# are deliberately NOT re-checked here, so this gate fails only on a dead link the PR
+# itself introduces — the person adding a link finds out immediately, in their PR.
+#
+# The weekly external-links.yml workflow covers the whole site over time; this one is
+# the fast, targeted gate for freshly-added links.
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  new-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so we can diff against the PR base commit.
+          fetch-depth: 0
+
+      - name: Collect newly-added external links
+        id: collect
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          # Added lines (drop the +++ file-header line) in src/, then pull out URLs.
+          git diff "$base" HEAD -- src \
+            | grep '^+' | grep -v '^+++' \
+            | grep -oE 'https?://[^[:space:]"()<>]+' \
+            | sort -u > added-links.txt || true
+          count=$(wc -l < added-links.txt | tr -d ' ')
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Newly-added external link(s): $count"
+          cat added-links.txt
+
+      # Only runs when the PR actually added external links. lychee reads the URL list
+      # from added-links.txt; example.* placeholder domains (used in the events.yaml
+      # docs) are excluded, and 429 (rate-limited) is accepted so a busy host isn't a
+      # false failure.
+      - name: Check the new links
+        if: steps.collect.outputs.count != '0'
+        uses: lycheeverse/lychee-action@v2.8.0
+        with:
+          args: >-
+            --no-progress
+            --exclude example\.(com|net|org)
+            --accept 200..=299,429
+            --max-retries 2
+            added-links.txt
+          # This IS a gate: fail the PR when a newly-added link is broken.
+          fail: true
