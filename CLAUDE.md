@@ -4,68 +4,77 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A static, dependency-free website for the Groton Dunstable SEPAC (Special Education Parent Advisory
-Council), hosted on GitHub Pages.
-
-## Critical: the root `.html` files are generated — do not hand-edit them
-
-Every `*.html` file in the repo root (`index.html`, `by-laws.html`, the five resource pages, etc.)
-is a **build artifact** produced by `node tools/generate.js`. Editing them directly will be
-silently overwritten the next time the generator runs. Always edit the source in `tools/` and
-regenerate.
-
-Source of truth lives in `tools/`:
-- **`tools/content.js`** — hand-authored prose and shared config:
-  - `NAV` (nav order), `EMAIL`, `FACEBOOK`, `DISTRICT` constants.
-  - `PAGES` — the prose pages (home, about-us-contact, meetings-events) as HTML-body strings.
-  - `DIRECTORY` — per-page config for the five "resource directory" pages: an `intro` HTML string
-    plus a `skip` list of heading texts to omit from the auto-generated sections.
-- **`tools/bylaws.js`** — the full by-laws page body (long; kept separate).
-- **`tools/links.json`** — data for the resource directory pages. Each page key maps to an ordered
-  array of items: headings `{type:"h",level,text}` and links `{type:"a",text,href}`. The generator
-  walks the array and groups each run of links under the preceding heading.
-- **`tools/generate.js`** — the generator. Owns the shared layout (header, accessible nav, footer),
-  assembles prose pages from `PAGES`, the by-laws page, and directory pages from `links.json` +
-  `DIRECTORY`, then writes the root `.html` files. `annotateNewTab()` post-processes every page to
-  append a visually-hidden "(opens in new tab)" note to each `target="_blank"` link.
-- **`styles.css`** — the single hand-written stylesheet shared by all pages.
+A static website for the Groton Dunstable SEPAC (Special Education Parent Advisory Council),
+built with [Eleventy (11ty)](https://www.11ty.dev/) and hosted on GitHub Pages. Content is
+authored in Markdown so non-engineer volunteers can edit and review it via GitHub or Claude.
 
 ## Commands
 
-There is no build tool, package.json, test suite, or linter. Node is used only to run the
-generator, and relies solely on built-in modules + global `fetch` (no `npm install`).
-
 ```bash
-node tools/generate.js          # regenerate all root .html files after editing tools/ sources
-python3 -m http.server 8000     # preview locally, then open http://localhost:8000
+npm install        # once, to install Eleventy
+npm run serve      # local dev server with live reload -> http://localhost:8080/gdsepac/
+npm run build      # one-off build into _site/
 ```
 
-After any source change: run `node tools/generate.js` and commit **both** the source edit and the
-regenerated `.html` files (the site is served from the committed HTML).
+`_site/` is the generated output; it is git-ignored and produced by CI, never committed.
+
+## Where things live (all source is under `src/`)
+
+- **`src/*.md`** — page content in Markdown. The five resource pages
+  (`about-disability.md`, `advocacy.md`, etc.) are intro prose plus `## Heading` + link lists.
+  `about-us-contact.md` and `meetings-events.md` are prose with a few boxed sections.
+  `by-laws.md` is the full by-laws.
+- **`src/index.njk`** — the home page (hero + cards + a quicklink grid generated from the nav).
+- **`src/_data/site.js`** — `EMAIL`, `FACEBOOK`, `DISTRICT`, and `NAV` (nav order + labels).
+- **`src/_data/people.js`** — Board of Directors and School Liaisons (edit a name here to update
+  the About page — no HTML needed).
+- **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below).
+- **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, footer, scripts),
+  `resource.njk` (directory pages), `bylaws.njk`.
+- **`.eleventy.js`** — Eleventy config: passthrough copy, the pathPrefix, and two transforms
+  (section boxing + external-link handling), plus the `::: box` Markdown fences.
+- **`styles.css`** — the single hand-written stylesheet (unchanged by the migration).
 
 ## Making common changes
 
-- Prose on home / about / meetings, or a directory page's intro → `tools/content.js`
-- By-laws text → `tools/bylaws.js`
-- Add / edit / remove a resource link or a section heading on a directory page → `tools/links.json`
-- New page → add to `NAV` in `content.js`, add a `PAGES` (prose) or `DIRECTORY` (link-list) entry,
-  then regenerate.
+- Prose on home / about / meetings, or a directory page's intro → the matching `src/*.md`
+  (home is `src/index.njk`).
+- Add / edit / remove a resource link or section heading on a directory page → edit the
+  `## Heading` + `- [text](url)` lists in that page's `src/*.md`.
+- By-laws text → `src/by-laws.md`.
+- Board members or liaisons → `src/_data/people.js`.
+- Nav order / labels, or the contact email / Facebook URL → `src/_data/site.js`.
+- New page → add it to `NAV` in `site.js`, create `src/<slug>.md`, and (if linked from an old
+  URL) add a redirect in `_data/redirects.js`.
 
-## Project rules
+## Conventions
 
-- **Keep assets local.** Store images and documents under `assets/` and reference them with relative
-  paths; don't hotlink external URLs for the site's own assets.
-- **External links** use `target="_blank" rel="noopener"`; `annotateNewTab()` adds the screen-reader
-  note automatically, so don't add it by hand.
-- **Preserve the accessibility work** when editing markup/CSS: one `<h1>` per page and no skipped
-  heading levels; the mobile nav is an accessible `<button>` (aria-expanded/-controls) with a small
-  inline toggle script and a `.js`-class progressive-enhancement fallback (the full nav shows if JS
-  is off); `prefers-reduced-motion` is honored; prose is capped at ~70ch.
-- **Neutral palette** (black/white/gray) — the GD logo is intended to be the only color.
+- **Boxed sections.** Markdown has no syntax for a `<div class>` wrapper, so boxed cards are
+  marked with a fence: `::: box card` … `:::` (multiple classes and an `#id` are allowed, e.g.
+  `::: box card #contact`). The resource and by-laws pages instead auto-wrap each `##` section
+  into its box via a transform — no fences needed there.
+- **External links** are plain Markdown links (`[text](https://…)`). A build transform adds
+  `target="_blank" rel="noopener"` and a visually-hidden "(opens in new tab)" note — do **not**
+  add these by hand. Internal links use root-relative paths (`/by-laws/`); the pathPrefix is
+  applied at build time.
+- **Keep assets local.** Store images/documents under `assets/` and reference them root-relative
+  (`/assets/…`); don't hotlink external URLs for the site's own assets.
+- **Preserve the accessibility work:** one `<h1>` per page and no skipped heading levels; the
+  mobile nav is an accessible `<button>` (aria-expanded/-controls) with a small inline toggle
+  script and a `.js` progressive-enhancement fallback; `prefers-reduced-motion` is honored;
+  prose is capped at ~70ch.
+- **Neutral palette** (black/white/gray) — the GD logo is the only color.
 - **Contact is a `mailto:` link**, not a form (static hosting has no backend).
+
+## URLs and redirects
+
+Pages use pretty URLs (`/about-us-contact/`). The old flat `*.html` URLs still work: a redirect
+stub is generated at each old path from `_data/redirects.js` (`src/redirects.njk`).
 
 ## Deployment
 
-Served by GitHub Pages from the `main` branch root (`.nojekyll` present) at
-https://kescalada.github.io/gdsepac/. The generated `.html` files must be committed, since the site
-is served directly from them.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds with Eleventy and
+publishes `_site/` to the **`gh-pages`** branch; GitHub Pages serves the site from that branch at
+https://kescalada.github.io/gdsepac/. Pull requests get a live preview URL via
+`.github/workflows/pr-preview.yml` (published under `pr-preview/pr-N/`), so a non-technical
+reviewer can click through the rendered change before it merges.

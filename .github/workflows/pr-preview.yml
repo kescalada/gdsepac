@@ -1,0 +1,38 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pr-preview-${{ github.event.number }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        if: github.event.action != 'closed'
+        with:
+          node-version: 20
+      - run: npm ci
+        if: github.event.action != 'closed'
+      - name: Build site with the PR-preview path prefix
+        if: github.event.action != 'closed'
+        run: npx eleventy
+        env:
+          PATH_PREFIX: /gdsepac/pr-preview/pr-${{ github.event.number }}/
+      # Deploys ./_site to gh-pages under pr-preview/pr-N/ and comments the URL on
+      # the PR (https://kescalada.github.io/gdsepac/pr-preview/pr-N/). On PR close
+      # it removes that directory automatically.
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./_site
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
