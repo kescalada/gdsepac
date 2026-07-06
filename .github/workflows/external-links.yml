@@ -1,0 +1,103 @@
+name: External link check (weekly)
+
+# Weekly sweep of every EXTERNAL (http/https) link on the built site. Unlike the fast,
+# offline internal-link gate in links.yml, this one hits the network, so it runs on a
+# schedule instead of per-PR and never blocks a merge. Results are reported into a single
+# rolling GitHub issue (labeled `link-check`): the issue is created when broken links
+# first appear, updated in place on later runs, and closed automatically once every
+# external link is healthy again.
+on:
+  schedule:
+    - cron: "0 12 * * 1" # Mondays at 12:00 UTC
+  workflow_dispatch: # allow a manual run from the Actions tab
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  external-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+
+      # Build with a ROOT path prefix (not the production /gdsepac/) so root-relative
+      # links become /page/ and /assets/… — resolvable directly under _site/ via the
+      # --root-dir passed to lychee below. This lets lychee resolve internal links to
+      # local files and then skip them via the scheme filter, instead of erroring on
+      # every unresolved root-relative link.
+      - name: Build site with a root path prefix
+        run: npx eleventy
+        env:
+          PATH_PREFIX: /
+
+      # Ensure the rolling-report label exists before we look it up or attach it.
+      # `--force` creates it if missing and is a no-op update if it already exists.
+      - name: Ensure report label exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh label create link-check --color FBCA04 --description "Automated external link report" --force
+
+      - name: Check external links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2.8.0
+        with:
+          # --root-dir resolves internal root-relative links to files under _site/; the
+          # --scheme filter then keeps only http/https links, so those resolved internal
+          # links are excluded rather than checked. Net effect: a purely EXTERNAL check
+          # with no internal-resolution noise. 429 (rate-limited) is accepted alongside
+          # 2xx so a busy host isn't reported as broken.
+          args: >-
+            --no-progress
+            --root-dir ${{ github.workspace }}/_site
+            --scheme https
+            --scheme http
+            --accept 200..=299,429
+            --max-retries 2
+            './_site/**/*.html'
+          format: markdown
+          output: ./lychee-report.md
+          # A report, never a gate — don't fail the job when links are broken. The
+          # exit_code output still reflects whether lychee found problems.
+          fail: false
+
+      - name: Find existing report issue
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --label link-check --state open --json number --jq '.[0].number // ""')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      # Broken links found: build the issue body (a run link plus lychee's report) and
+      # create the issue, or update it in place if one is already open.
+      - name: Compose issue body
+        if: steps.lychee.outputs.exit_code != 0
+        run: |
+          {
+            echo "_Automated weekly external-link sweep &mdash; [view run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})._"
+            echo
+            cat ./lychee-report.md
+          } > ./issue-body.md
+
+      - name: Create or update report issue
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v6.0.0
+        with:
+          title: Broken external links
+          content-filepath: ./issue-body.md
+          issue-number: ${{ steps.issue.outputs.number }}
+          labels: link-check
+
+      # All external links healthy: if a report issue is still open, close it.
+      - name: Close report issue when all links pass
+        if: steps.lychee.outputs.exit_code == 0 && steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close ${{ steps.issue.outputs.number }} \
+            --comment "All external links passed the latest weekly check. Closing automatically."
