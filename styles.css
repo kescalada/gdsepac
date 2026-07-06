@@ -38,6 +38,11 @@ a:hover { text-decoration-color: #1a1a1a; }
 }
 .skip-link:focus { left: 8px; top: 8px; }
 
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
 /* Header */
 .site-header {
   display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
@@ -62,7 +67,7 @@ a:hover { text-decoration-color: #1a1a1a; }
 }
 .nav-list a:hover { background: var(--brand-light); color: var(--brand-dark); }
 .nav-list a[aria-current="page"] { background: var(--brand); color: #fff; }
-.nav-burger { display: none; }
+.nav-toggle { display: none; }
 
 /* Hero */
 .hero {
@@ -94,6 +99,8 @@ main { padding: 36px 0 56px; }
 .intro { margin-bottom: 26px; }
 .intro h2 { color: var(--brand-dark); }
 .fineprint { font-size: .88rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 14px; }
+/* Cap prose line length for readability (~70 characters) */
+.card p, .intro p, .article p, .article li, .defs dd { max-width: 70ch; }
 .muted { color: var(--muted); }
 
 /* Buttons */
@@ -138,8 +145,6 @@ main { padding: 36px 0 56px; }
 .resource-group h2 { margin: 0 0 14px; color: var(--brand-dark); border-bottom: 2px solid var(--brand-light); padding-bottom: 8px; }
 .link-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 32px; }
 .link-list li { break-inside: avoid; margin: 0 0 8px; }
-.link-list a { text-decoration: none; }
-.link-list a:hover { text-decoration: underline; }
 
 /* By-laws */
 .bylaws-meta { color: var(--muted); font-style: italic; }
@@ -161,17 +166,19 @@ main { padding: 36px 0 56px; }
 @media (max-width: 860px) {
   .link-list { columns: 1; }
   .site-header { flex-wrap: nowrap; }
-  .nav-burger {
-    display: flex; flex-direction: column; justify-content: center; gap: 5px;
-    width: 44px; height: 44px; cursor: pointer; border-radius: 8px; background: var(--brand-light);
+  /* With JS: show the toggle button and collapse the menu. */
+  .js .nav-toggle {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+    width: 44px; height: 44px; padding: 0; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--brand-light);
   }
-  .nav-burger span { display: block; height: 3px; width: 22px; margin: 0 auto; background: var(--brand-dark); border-radius: 2px; }
-  .nav-list {
+  .nav-toggle span { display: block; height: 3px; width: 22px; background: var(--brand-dark); border-radius: 2px; }
+  .js .nav-list {
     display: none; position: absolute; right: 0; top: 52px; z-index: 50;
     flex-direction: column; min-width: 240px; background: #fff; padding: 8px;
     border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
   }
-  .nav-toggle:checked ~ .nav .nav-list { display: flex; }
+  .js .nav-list.open { display: flex; }
   .people .role { min-width: 0; display: block; }
 }
 

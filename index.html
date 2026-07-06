@@ -6,6 +6,7 @@
   <title>GD SEPAC</title>
   <meta name="description" content="Groton Dunstable Special Education Parent Advisory Council — an all-volunteer group of parents of exceptional children in Groton and Dunstable, MA.">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,10 +17,11 @@
         <span class="brand-text"><strong>Groton Dunstable SEPAC</strong></span>
       </a>
     </div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
     <nav class="nav" aria-label="Main">
-      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
-      <ul class="nav-list">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="primary-nav">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about-us-contact.html">About Us & Contact</a></li>
         <li><a href="meetings-events.html">Meetings & Events</a></li>
@@ -60,7 +62,7 @@
         <h2>Contact Us</h2>
         <p>The best way to reach us is by email.</p>
         <p><a class="btn" href="mailto:GDSEPAC2@gmail.com">Email GDSEPAC2@gmail.com</a></p>
-        <p>You can also <a href="https://www.facebook.com/groups/443095813186453" target="_blank" rel="noopener">join us on Facebook</a>.</p>
+        <p>You can also <a href="https://www.facebook.com/groups/443095813186453" target="_blank" rel="noopener">join us on Facebook<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
       </section>
 
       <section class="quicklinks">
@@ -81,9 +83,30 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p><a href="mailto:GDSEPAC2@gmail.com">GDSEPAC2@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://www.facebook.com/groups/443095813186453" target="_blank" rel="noopener">Facebook</a></p>
+      <p><a href="mailto:GDSEPAC2@gmail.com">GDSEPAC2@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://www.facebook.com/groups/443095813186453" target="_blank" rel="noopener">Facebook<span class="visually-hidden"> (opens in new tab)</span></a></p>
       <p class="copyright">&copy;2026 GD SEPAC.</p>
     </div>
   </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var list = document.getElementById('primary-nav');
+      if (!btn || !list) return;
+      function close() {
+        list.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open menu');
+      }
+      btn.addEventListener('click', function () {
+        var open = list.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      list.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && list.classList.contains('open')) { close(); btn.focus(); }
+      });
+    })();
+  </script>
 </body>
 </html>

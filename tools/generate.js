@@ -14,15 +14,26 @@ const YEAR = new Date().getFullYear();
 const esc = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// Append a visually-hidden "(opens in new tab)" note to every external link
+// (any <a target="_blank">) so screen-reader users are warned. Server-rendered
+// so it does not depend on JavaScript.
+function annotateNewTab(html) {
+  return html.replace(/(<a\b[^>]*\btarget="_blank"[^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, inner, close) => {
+    if (/visually-hidden/.test(inner)) return m;
+    return open + inner + '<span class="visually-hidden"> (opens in new tab)</span>' + close;
+  });
+}
+
 function nav(active) {
   const items = NAV.map(([label, file]) => {
     const cur = file === active ? ' aria-current="page"' : "";
     return `        <li><a href="${file}"${cur}>${label}</a></li>`;
   }).join("\n");
-  return `    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-    <nav class="nav" aria-label="Main">
-      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
-      <ul class="nav-list">
+  return `    <nav class="nav" aria-label="Main">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="primary-nav">
 ${items}
       </ul>
     </nav>`;
@@ -44,7 +55,7 @@ function layout({ active, title, hero, body }) {
     <h1>${esc(title)}</h1>
   </div>`;
 
-  return `<!DOCTYPE html>
+  const doc = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -52,6 +63,7 @@ function layout({ active, title, hero, body }) {
   <title>${esc(pageTitle)}</title>
   <meta name="description" content="Groton Dunstable Special Education Parent Advisory Council — an all-volunteer group of parents of exceptional children in Groton and Dunstable, MA.">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -77,9 +89,31 @@ ${body}
       <p class="copyright">&copy;${YEAR} GD SEPAC.</p>
     </div>
   </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var list = document.getElementById('primary-nav');
+      if (!btn || !list) return;
+      function close() {
+        list.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open menu');
+      }
+      btn.addEventListener('click', function () {
+        var open = list.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      list.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && list.classList.contains('open')) { close(); btn.focus(); }
+      });
+    })();
+  </script>
 </body>
 </html>
 `;
+  return annotateNewTab(doc);
 }
 
 // Build a directory page body from links.json sections.
