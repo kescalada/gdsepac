@@ -1,0 +1,41 @@
+---
+title: Home
+hero: true
+layout: base.njk
+---
+{%- set descriptions = {
+  "About Us & Contact": "Who we are, our board, and liaisons.",
+  "Meetings & Events": "Gatherings and presentations throughout the year.",
+  "About Disability": "Learn from the disabled community.",
+  "Understanding the Process": "IEPs, 504s, evaluations, eligibility, and more.",
+  "Helpful Organizations": "National, state, and local support organizations.",
+  "State and Federal Guidance": "The laws and rights that protect your student.",
+  "Advocacy": "Take action in the best interest of children.",
+  "By-Laws": "How the SEPAC is organized and governed."
+} -%}
+      <section class="card">
+        <h2>What is a SEPAC?</h2>
+        <p>The Groton Dunstable Special Education Parent Advisory Council (GD SEPAC) is an
+        all-volunteer group of parents of exceptional children with unique needs in Groton and
+        Dunstable, MA. As mandated by Massachusetts law, we provide feedback to the School
+        Committee and school district on special education programs and policies, as well as
+        provide feedback in their planning and development. Currently, the GD SEPAC has a
+        non-voting seat on the School Committee and a seat on the School Committee's DEI
+        Advisory Group.</p>
+      </section>
+
+      <section class="card contact-cta">
+        <h2>Contact Us</h2>
+        <p>The best way to reach us is by email.</p>
+        <p><a class="btn" href="mailto:{{ site.EMAIL }}">Email {{ site.EMAIL }}</a></p>
+        <p>You can also <a href="{{ site.FACEBOOK }}" target="_blank" rel="noopener">join us on Facebook</a>.</p>
+      </section>
+
+      <section class="quicklinks">
+        <h2>Explore</h2>
+        <div class="quicklink-grid">
+{%- for item in site.NAV %}{% if item.label != "Home" %}
+          <a href="{{ item.url }}"><strong>{{ item.label }}</strong><span>{{ descriptions[item.label] }}</span></a>
+{%- endif %}{% endfor %}
+        </div>
+      </section>

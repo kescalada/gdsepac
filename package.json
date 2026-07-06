@@ -1,0 +1,17 @@
+{
+  "name": "gdsepac-site",
+  "version": "1.0.0",
+  "description": "Static website for the Groton Dunstable SEPAC, built with Eleventy.",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "parity": "node tools/parity-check.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "markdown-it-container": "^4.0.0"
+  }
+}
