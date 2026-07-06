@@ -23,6 +23,9 @@ jobs:
           node-version: 20
       - run: npm ci
         if: github.event.action != 'closed'
+      - name: Validate content data
+        if: github.event.action != 'closed'
+        run: npm run validate
       - name: Build site with the PR-preview path prefix
         if: github.event.action != 'closed'
         run: npx eleventy

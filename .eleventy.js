@@ -1,6 +1,7 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const MarkdownIt = require("markdown-it");
 const container = require("markdown-it-container");
+const yaml = require("js-yaml");
 
 // Boxed sections that authors mark with `::: box <classes>` fences in Markdown.
 // Renders `<section class="<classes>"> … </section>` so the existing CSS matches.
@@ -26,6 +27,10 @@ function boxContainer(md) {
 const mdInline = new MarkdownIt({ html: true });
 
 module.exports = function (eleventyConfig) {
+  // Read `_data/*.yaml` files (events.yaml, people.yaml) as global data.
+  // Eleventy parses .js/.json natively but not YAML, so register the parser.
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy(".nojekyll");

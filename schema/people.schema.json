@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Board & Liaisons data (people.yaml)",
+  "description": "The Board of Directors and School Liaisons shown on the About Us & Contact page. Each person is a role plus a name.",
+  "type": "object",
+  "required": ["board", "liaisons"],
+  "additionalProperties": false,
+  "properties": {
+    "board": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "role": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "liaisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "role": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

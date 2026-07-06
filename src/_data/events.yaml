@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../schema/events.schema.json
+#
+# Upcoming GD SEPAC events, shown on the Meetings & Events page.
+#
+# Each event is one list entry. Fields:
+#   title        (required)  The event name, e.g. "General Meeting".
+#   date         (required)  When it happens, as plain text, e.g. "September 18, 2026, 7:00pm".
+#                            Keep it in quotes so it stays text, not a parsed date.
+#   location     (optional)  Where it happens, e.g. "Groton Dunstable Middle School".
+#   description  (optional)  A sentence or two about the event.
+#   image        (optional)  A picture, with two parts:
+#                              src  the file path, which MUST start with /assets/
+#                                   (put the image file in the assets/ folder first).
+#                              alt  a short description of the picture for screen
+#                                   readers; use "" for a purely decorative image.
+#   link         (optional)  A button, with two parts:
+#                              url    where the button goes.
+#                              label  the button text, e.g. "RSVP".
+#
+# Copy-paste example (delete the leading "# " on each line to use it):
+#
+# - title: "General Meeting"
+#   date: "September 18, 2026, 7:00pm"
+#   location: "Virtual (Zoom)"
+#   description: "Updates from Student Services and open discussion. All are welcome."
+#   image:
+#     src: /assets/events/general-meeting.webp
+#     alt: "Parents seated in a circle during a SEPAC meeting"
+#   link:
+#     url: "https://example.com/rsvp"
+#     label: "RSVP"
+#
+# There are no events yet. To add events, REPLACE the `[]` on the last line with
+# entries like the commented example above (each event starting with `- `). To
+# have no events, keep the `[]` — an empty list is the "no events" state.
+[]
