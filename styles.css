@@ -18,6 +18,13 @@
 
 html { scroll-behavior: smooth; }
 
+/* Respect the visitor's "Reduce Motion" OS setting. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+  .quicklink-grid a:hover { transform: none; }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

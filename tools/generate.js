@@ -70,7 +70,7 @@ function layout({ active, title, hero, body }) {
   <header class="site-header">
     <div class="brand">
       <a href="index.html" class="brand-link">
-        <span class="brand-mark"><img src="assets/home-header.webp" alt="Groton Dunstable SEPAC logo"></span>
+        <span class="brand-mark"><img src="assets/home-header.webp" alt=""></span>
         <span class="brand-text"><strong>Groton Dunstable SEPAC</strong></span>
       </a>
     </div>
