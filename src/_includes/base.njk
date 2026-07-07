@@ -30,6 +30,20 @@
     </nav>
   </header>
 
+  <div class="site-search">
+    <div class="site-search-inner container">
+      <form class="search-form" role="search" onsubmit="return false;">
+        <label for="site-search-input" class="visually-hidden">Search the site</label>
+        <input id="site-search-input" class="search-input" type="search"
+               placeholder="Search resources and pages…" autocomplete="off"
+               aria-controls="site-search-results" aria-expanded="false"
+               aria-describedby="site-search-status">
+      </form>
+      <div id="site-search-results" class="search-results" hidden></div>
+      <p id="site-search-status" class="visually-hidden" aria-live="polite"></p>
+    </div>
+  </div>
+
 {% if hero %}
   <section class="hero">
     <div class="hero-inner">
@@ -77,5 +91,7 @@
       });
     })();
   </script>
+  <script>window.SEARCH_PATHS={fuse:"{{ '/assets/vendor/fuse.basic.min.js' | url }}",index:"{{ '/search-index.js' | url }}"};</script>
+  <script src="/assets/search.js" defer></script>
 </body>
 </html>
