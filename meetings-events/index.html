@@ -35,6 +35,17 @@
     </nav>
   </header>
 
+  <div class="site-search">
+    <div class="site-search-inner container">
+      <form class="search-form" role="search" onsubmit="return false;">
+        <label for="site-search-input" class="visually-hidden">Search the site</label>
+        <input id="site-search-input" class="search-input" type="search" placeholder="Search resources and pages…" autocomplete="off" aria-controls="site-search-results" aria-expanded="false" aria-describedby="site-search-status">
+      </form>
+      <div id="site-search-results" class="search-results" hidden=""></div>
+      <p id="site-search-status" class="visually-hidden" aria-live="polite"></p>
+    </div>
+  </div>
+
 
   <div class="page-head">
     <h1>Meetings &amp; Events</h1>
@@ -46,7 +57,7 @@
 <p>Groton Dunstable SEPAC holds a variety of gatherings and presentations throughout the school year. All events are open to anyone, from any district, interested in the education of students with unique needs. Discussion topics relate to supporting parents of students receiving special education services in Groton and Dunstable, providing feedback to and gathering updates from Groton Dunstable Regional School District's Student Services administration and advising the district and School Committee on key issues important to our community. We strive to advocate for all students while maintaining the GD SEPAC as a strong volunteer-based organization.</p>
 </section>
 <section class="card">
-<h2>Types of Meetings</h2>
+<h2 id="types-of-meetings">Types of Meetings</h2>
 <dl class="defs">
   <dt>General Meetings</dt>
   <dd>Usually take place virtually and all members of GDRSD and the community are welcome.</dd>
@@ -63,11 +74,11 @@
 </dl>
 </section>
 <section class="card upcoming">
-<h2>Upcoming GD SEPAC Events</h2>
+<h2 id="upcoming-gd-sepac-events">Upcoming GD SEPAC Events</h2>
 <p class="muted">No events at the moment.</p>
 </section>
 <section class="card upcoming">
-<h2>Upcoming MassPAC Workshops</h2>
+<h2 id="upcoming-masspac-workshops">Upcoming MassPAC Workshops</h2>
 <p>MassPAC workshop offerings are available to members of the GDRSD community. View the current schedule on the <a href="https://fcsn.org/calendar/" target="_blank" rel="noopener">FCSN events calendar<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
 <p><a class="btn btn-outline" href="https://fcsn.org/calendar/" target="_blank" rel="noopener">View MassPAC Workshops<span class="visually-hidden"> (opens in new tab)</span></a></p>
 </section>
@@ -101,5 +112,7 @@
       });
     })();
   </script>
+  <script>window.SEARCH_PATHS={fuse:"/gdsepac/assets/vendor/fuse.basic.min.js",index:"/gdsepac/search-index.js"};</script>
+  <script src="/gdsepac/assets/search.js" defer=""></script>
 </body>
 </html>
