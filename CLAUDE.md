@@ -29,10 +29,12 @@ npm run build      # one-off build into _site/
 - **`src/_data/people.js`** — Board of Directors and School Liaisons (edit a name here to update
   the About page — no HTML needed).
 - **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below).
-- **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, footer, scripts),
-  `resource.njk` (directory pages), `bylaws.njk`.
-- **`.eleventy.js`** — Eleventy config: passthrough copy, the pathPrefix, and two transforms
-  (section boxing + external-link handling), plus the `::: box` Markdown fences.
+- **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, the site-search bar, footer,
+  scripts), `resource.njk` (directory pages), `bylaws.njk`.
+- **`.eleventy.js`** — Eleventy config: passthrough copy, the pathPrefix, and three transforms
+  (section boxing, external-link handling, and `addAnchors` which slugs heading/resource-link ids),
+  plus the `::: box` Markdown fences and an `eleventy.after` hook that builds the search index.
+- **`assets/search.js`** + **`assets/vendor/fuse.basic.min.js`** — client-side site search (see below).
 - **`styles.css`** — the single hand-written stylesheet (unchanged by the migration).
 
 ## Making common changes
@@ -63,6 +65,12 @@ npm run build      # one-off build into _site/
   mobile nav is an accessible `<button>` (aria-expanded/-controls) with a small inline toggle
   script and a `.js` progressive-enhancement fallback; `prefers-reduced-motion` is honored;
   prose is capped at ~70ch.
+- **Site search.** A slim search bar in `base.njk` (shown only when JS is on) searches a Fuse.js
+  index built at build time by the `eleventy.after` hook in `.eleventy.js`, from every page's
+  rendered `<main>`. Results deep-link to the matching heading or resource link (using the ids that
+  the `addAnchors` transform adds) and highlight it on arrival. Fuse is vendored under
+  `assets/vendor/` (not a CDN); the generated `_site/search-index.js` is never committed. There's no
+  content upkeep — the index is derived from the pages, so it stays in sync automatically.
 - **Neutral palette** (black/white/gray) — the GD logo is the only color.
 - **Contact is a `mailto:` link**, not a form (static hosting has no backend).
 
