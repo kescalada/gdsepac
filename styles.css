@@ -64,7 +64,7 @@ a:hover { text-decoration-color: #1a1a1a; }
 .brand-text small { color: var(--muted); font-size: .8rem; }
 
 /* Nav */
-.nav { position: relative; }
+.nav { position: relative; order: 3; flex: 1 0 100%; }
 .nav-list {
   display: flex; flex-wrap: wrap; gap: 2px; list-style: none; margin: 0; padding: 0;
 }
@@ -181,7 +181,14 @@ main { padding: 36px 0 56px; }
 /* Responsive */
 @media (max-width: 860px) {
   .link-list { columns: 1; }
-  .site-header { flex-wrap: nowrap; }
+  /* Brand + menu button on row 1; the search wraps full-width onto row 2.
+     Extra specificity (.site-header …) so these win over the base search rules,
+     which appear later in the file. */
+  .site-header { flex-wrap: wrap; }
+  .site-header .nav { order: 2; flex: 0 0 auto; }
+  .site-header .site-search { order: 3; flex: 1 0 100%; margin-left: 0; }
+  .site-header .search-input { width: 100%; }
+  .site-header .search-results { left: 0; right: 0; width: auto; max-width: none; }
   /* With JS: show the toggle button and collapse the menu. */
   .js .nav-toggle {
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
@@ -205,21 +212,21 @@ main { padding: 36px 0 56px; }
   .hero .hero-titles { text-align: center; }
 }
 
-/* Site search (shown only when JS is available) */
-.site-search { display: none; background: #fff; border-bottom: 1px solid var(--line); }
+/* Site search (in the header, top-right; shown only when JS is available) */
+.site-search { display: none; position: relative; order: 2; margin-left: auto; }
 .js .site-search { display: block; }
-.site-search-inner { position: relative; padding: 10px 20px; }
 .search-form { margin: 0; }
 .search-input {
-  width: 100%; max-width: 640px; padding: 10px 14px; font-size: 1rem;
+  width: 240px; max-width: 100%; padding: 8px 14px; font-size: .95rem;
   color: var(--ink); background: var(--soft);
-  border: 1px solid var(--line); border-radius: 8px;
+  border: 1px solid var(--line); border-radius: 999px;
 }
 .search-input:focus { outline: 2px solid var(--brand); outline-offset: 1px; background: #fff; }
 .search-results {
-  position: absolute; z-index: 60; left: 20px; right: 20px; max-width: 640px; margin-top: 6px;
+  position: absolute; z-index: 60; right: 0; top: calc(100% + 8px);
+  width: 360px; max-width: 86vw;
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
-  box-shadow: var(--shadow); max-height: 60vh; overflow-y: auto;
+  box-shadow: var(--shadow); max-height: 70vh; overflow-y: auto;
 }
 .search-results ul { list-style: none; margin: 0; padding: 6px; }
 .search-results a {

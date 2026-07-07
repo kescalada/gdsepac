@@ -17,6 +17,14 @@
         <span class="brand-text"><strong>Groton Dunstable SEPAC</strong></span>
       </a>
     </div>
+    <div class="site-search">
+      <form class="search-form" role="search" onsubmit="return false;">
+        <label for="site-search-input" class="visually-hidden">Search the site</label>
+        <input id="site-search-input" class="search-input" type="search" placeholder="Search…" autocomplete="off" aria-controls="site-search-results" aria-expanded="false" aria-describedby="site-search-status">
+      </form>
+      <div id="site-search-results" class="search-results" hidden=""></div>
+      <p id="site-search-status" class="visually-hidden" aria-live="polite"></p>
+    </div>
     <nav class="nav" aria-label="Main">
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -34,17 +42,6 @@
       </ul>
     </nav>
   </header>
-
-  <div class="site-search">
-    <div class="site-search-inner container">
-      <form class="search-form" role="search" onsubmit="return false;">
-        <label for="site-search-input" class="visually-hidden">Search the site</label>
-        <input id="site-search-input" class="search-input" type="search" placeholder="Search resources and pages…" autocomplete="off" aria-controls="site-search-results" aria-expanded="false" aria-describedby="site-search-status">
-      </form>
-      <div id="site-search-results" class="search-results" hidden=""></div>
-      <p id="site-search-status" class="visually-hidden" aria-live="polite"></p>
-    </div>
-  </div>
 
 
   <section class="hero">
