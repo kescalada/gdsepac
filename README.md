@@ -9,7 +9,8 @@ group of parents of exceptional children with unique needs in Groton and Dunstab
 ## Pages
 
 Home, About Us & Contact, Meetings & Events, About Disability, Understanding the Process,
-Helpful Organizations, State and Federal Guidance, Advocacy, and By-Laws.
+Helpful Organizations, State and Federal Guidance, and Advocacy. The by-laws are published as a
+downloadable PDF (linked from About Us), not a page.
 
 The five "directory" pages (About Disability, Understanding the Process, Helpful Organizations,
 State and Federal Guidance, Advocacy) are collections of grouped external resource links — over
@@ -27,7 +28,9 @@ merges.
 - **Text** (home, about, meetings, page intros) → the matching file in `src/` (home is
   `src/index.njk`).
 - **Resource links** → the `## Heading` + `- [text](url)` lists in that page's `src/*.md`.
-- **By-laws** → `src/by-laws.md`.
+- **By-laws PDF** → add the new dated file under `assets/docs/bylaws/` and point `BYLAWS_PDF`
+  in `src/_data/site.js` at it (the About Us button, `/by-laws/` redirect, and search entry all
+  follow that one path).
 - **Board members / liaisons** → `src/_data/people.js`.
 - **Nav, email, Facebook URL** → `src/_data/site.js`.
 

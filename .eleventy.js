@@ -4,6 +4,7 @@ const container = require("markdown-it-container");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const path = require("path");
+const site = require("./src/_data/site.js");
 
 // Boxed sections that authors mark with `::: box <classes>` fences in Markdown.
 // Renders `<section class="<classes>"> … </section>` so the existing CSS matches.
@@ -213,6 +214,16 @@ module.exports = function (eleventyConfig) {
         records.push({ text, section, pageTitle, href: `${base}#${idm[1]}` });
       }
     }
+
+    // The by-laws are a downloadable PDF with no page of their own; add one
+    // record so search still finds them and links straight to the download.
+    records.push({
+      title: "By-Laws",
+      text: "By-Laws bylaws by laws governing document articles officers meetings membership amendments",
+      section: "",
+      pageTitle: "PDF download",
+      href: prefix + site.BYLAWS_PDF,
+    });
 
     fs.writeFileSync(
       path.join(dir.output, "search-index.js"),
