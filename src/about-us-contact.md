@@ -14,9 +14,17 @@ We hold monthly meetings, workshops, and host morning coffee and evening dessert
 
 Liaisons to the SEPAC are in place for each Groton and Dunstable public school, as well as for the School Committee and the DEI Advisory Group.
 
-You can read more about how we are organized in our [by-laws](/by-laws/).
+You can read more about how we are organized in our by-laws:
 
-<p class="fineprint">The formation of this SEPAC is mandated by the Massachusetts Department of Elementary and Secondary Education: 603 CMR 28.07 (4) Parent Involvement: (4) Parent Advisory participation. Each school district shall create a district wide parent advisory council offering membership to all parents of eligible students and other interested parties. The parent advisory council duties shall include but not be limited to: advising the district on matters that pertain to the education and safety of students with disabilities; meeting regularly with school officials to participate in the planning, development, and evaluation of the school district's special education programs. The parent advisory council shall establish by-laws regarding officers and operational procedures, and, in the course of its duties, the parent advisory council shall receive assistance from the district without charge, upon reasonable notice, and subject to the availability of staff and resources. The district shall conduct, in cooperation with the parent advisory council, at least one workshop annually within the school district on the rights of students and their parents and guardians under state and federal special education laws. (See MGL c71B, 1C and 3)</p>
+<p><a class="btn" href="{{ site.BYLAWS_PDF }}">Download our By-Laws (PDF)</a></p>
+
+The formation of this SEPAC is mandated by the Massachusetts special education regulations:
+
+<blockquote class="reg-quote"><p>Each school district shall create a district wide parent advisory council offering membership to all parents of eligible students and other interested parties. The parent advisory council duties shall include but not be limited to: advising the district on matters that pertain to the education and safety of students with disabilities; meeting regularly with school officials to participate in the planning, development, and evaluation of the school district's special education programs. The parent advisory council shall establish by-laws regarding officers and operational procedures, and, in the course of its duties, the parent advisory council shall receive assistance from the district without charge, upon reasonable notice, and subject to the availability of staff and resources.</p><p class="reg-cite">&mdash; <a href="https://www.doe.mass.edu/lawsregs/603cmr28.html?section=07">603 CMR 28.07(4)</a>, Massachusetts Department of Elementary and Secondary Education</p></blockquote>
+
+The regulations also provide for an annual workshop on the rights of students and their families:
+
+<blockquote class="reg-quote"><p>The district shall conduct, in cooperation with the parent advisory council, at least one workshop annually within the school district on the rights of students and their parents and guardians under state and federal special education laws.</p><p class="reg-cite">&mdash; <a href="https://www.doe.mass.edu/lawsregs/603cmr28.html?section=03">603 CMR 28.03(1)(a)(4)</a>, Massachusetts Department of Elementary and Secondary Education</p></blockquote>
 :::
 
 ::: box card #contact

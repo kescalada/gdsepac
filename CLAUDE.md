@@ -23,14 +23,15 @@ npm run build      # one-off build into _site/
 - **`src/*.md`** — page content in Markdown. The five resource pages
   (`about-disability.md`, `advocacy.md`, etc.) are intro prose plus `## Heading` + link lists.
   `about-us-contact.md` and `meetings-events.md` are prose with a few boxed sections.
-  `by-laws.md` is the full by-laws.
+  (The by-laws are a downloadable PDF under `assets/docs/bylaws/`, not a page — see below.)
 - **`src/index.njk`** — the home page (hero + cards + a quicklink grid generated from the nav).
-- **`src/_data/site.js`** — `EMAIL`, `FACEBOOK`, `DISTRICT`, and `NAV` (nav order + labels).
+- **`src/_data/site.js`** — `EMAIL`, `FACEBOOK`, `DISTRICT`, `BYLAWS_PDF`, and `NAV` (nav order + labels).
 - **`src/_data/people.js`** — Board of Directors and School Liaisons (edit a name here to update
   the About page — no HTML needed).
-- **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below).
+- **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below);
+  `/by-laws/` and `by-laws.html` redirect to the by-laws PDF.
 - **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, the site-search bar, footer,
-  scripts), `resource.njk` (directory pages), `bylaws.njk`.
+  scripts) and `resource.njk` (directory pages).
 - **`.eleventy.js`** — Eleventy config: passthrough copy, the pathPrefix, and three transforms
   (section boxing, external-link handling, and `addAnchors` which slugs heading/resource-link ids),
   plus the `::: box` Markdown fences and an `eleventy.after` hook that builds the search index.
@@ -43,7 +44,9 @@ npm run build      # one-off build into _site/
   (home is `src/index.njk`).
 - Add / edit / remove a resource link or section heading on a directory page → edit the
   `## Heading` + `- [text](url)` lists in that page's `src/*.md`.
-- By-laws text → `src/by-laws.md`.
+- New by-laws version → add the dated PDF under `assets/docs/bylaws/` and update `BYLAWS_PDF` in
+  `src/_data/site.js` (one path drives the About Us download button, the `/by-laws/` redirect, and
+  the search entry).
 - Board members or liaisons → `src/_data/people.js`.
 - Nav order / labels, or the contact email / Facebook URL → `src/_data/site.js`.
 - New page → add it to `NAV` in `site.js`, create `src/<slug>.md`, and (if linked from an old
@@ -53,12 +56,12 @@ npm run build      # one-off build into _site/
 
 - **Boxed sections.** Markdown has no syntax for a `<div class>` wrapper, so boxed cards are
   marked with a fence: `::: box card` … `:::` (multiple classes and an `#id` are allowed, e.g.
-  `::: box card #contact`). The resource and by-laws pages instead auto-wrap each `##` section
+  `::: box card #contact`). The resource (directory) pages instead auto-wrap each `##` section
   into its box via a transform — no fences needed there.
 - **External links** are plain Markdown links (`[text](https://…)`). A build transform adds
   `target="_blank" rel="noopener"` and a visually-hidden "(opens in new tab)" note — do **not**
-  add these by hand. Internal links use root-relative paths (`/by-laws/`); the pathPrefix is
-  applied at build time.
+  add these by hand. Internal links use root-relative paths (`/about-us-contact/`); the pathPrefix
+  is applied at build time.
 - **Keep assets local.** Store images/documents under `assets/` and reference them root-relative
   (`/assets/…`); don't hotlink external URLs for the site's own assets.
 - **Preserve the accessibility work:** one `<h1>` per page and no skipped heading levels; the
