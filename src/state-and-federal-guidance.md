@@ -36,7 +36,6 @@ intro: |
 - [Wright's Law: Child Find](https://www.wrightslaw.com/info/child.find.index.htm)
 - [Early Intervention and Child Find](https://www.wrightslaw.com/info/child.find.index.htm)
 - [IDEA Section 300.111 Child Find](https://sites.ed.gov/idea/regs/b/b/300.111)
-- [MA DESE Child Find Resources](https://www.doe.mass.edu/specialeducation/families/)
 - [Child Find Mandate: What It Means to You](https://www.wrightslaw.com/info/child.find.mandate.htm)
 
 ## FERPA
