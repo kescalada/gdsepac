@@ -9,7 +9,7 @@ intro: |
 - [What is an IEP?](https://fcsn.org/what-is-an-iep/)
 - [Who is on the IEP Team?](https://fcsn.org/whos-on-the-iep-team/)
 - [IEP Process in Massachusetts](https://www.keystonecollaborative.org/wp-content/uploads/2020/07/MA-IEP-Process.pdf)
-- [Parent's Guide to Special Education](https://fcsn.org/a-parents-guide-to-special-education-english/)
+- [Parent's Guide to Special Education](https://fcsn.org/resource/parents-guide-to-special-education/)
 - [MA DESE IEP Forms and Notices](https://www.doe.mass.edu/specialeducation/iep/default.html)
 - [IEP Timelines](https://westernmassautismdirectory.com/wp-content/uploads/2019/05/Massachusetts-IEP-Timelines.pdf)
 - [Responding to the IEP](https://youtu.be/7OJzAJy8wpU)
