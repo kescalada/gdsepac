@@ -63,4 +63,4 @@ intro: |
 
 ## Local Policy
 
-- [GD District Policy Manual](https://z2policy.ctspublish.com/masc/browse/grotondunstableset/welcome/root)
+- [GD District Policy Manual](https://www.gdrsd.org/page/district-policies)
