@@ -38,7 +38,7 @@ intro: |
 
 ## Eligibility
 
-- [IEPs vs 504 Plans](https://www.understood.org/articles/en/the-difference-between-ieps-and-504-plans)
+- [IEPs vs 504 Plans](https://www.understood.org/en/articles/the-difference-between-ieps-and-504-plans)
 - [Eligibility Flow Chart](https://www.doe.mass.edu/specialeducation/iep/eligibility/)
 - [Specific Learning Disability Eligibility](https://www.mass.gov/doc/specific-learning-disability-eligibility-within-a-tiered-system-of-support/download)
 - [13 Disability Catergories under IDEA](https://www.understood.org/en/articles/conditions-covered-under-idea)
