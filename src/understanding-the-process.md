@@ -64,7 +64,7 @@ intro: |
 
 ## Transitions Ages 14-22
 
-- [Transition Planning Process](https://fcsn.org/tips-the-secondary-transition-planning-process-english/)
+- [Transition Planning Process](https://fcsn.org/resource/tips-transition-planning-english/)
 - [Transition Assessment](https://fcsn.org/tips-the-transition-assessment-english/)
 - [Decision Making at Age 18](https://fcsn.org/resource/age-of-majority-in-ma/)
 - [Secondary Services](https://fcsn.org/tips-secondary-transition-services-english/)
