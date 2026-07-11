@@ -39,7 +39,7 @@ intro: |
 ## Eligibility
 
 - [IEPs vs 504 Plans](https://www.understood.org/articles/en/the-difference-between-ieps-and-504-plans)
-- [Eligibility Flow Chart](https://fcsn.org/dese-writing-guide-for-the-iep/)
+- [Eligibility Flow Chart](https://www.doe.mass.edu/specialeducation/iep/eligibility/)
 - [Specific Learning Disability Eligibility](https://www.mass.gov/doc/specific-learning-disability-eligibility-within-a-tiered-system-of-support/download)
 - [13 Disability Catergories under IDEA](https://www.understood.org/en/articles/conditions-covered-under-idea)
 - [Why A Doctor's Note Doesn't Guarantee Services or Eligibility](https://adayinourshoes.com/no-a-doctors-note-does-not-get-you-services-on-an-iep/)
