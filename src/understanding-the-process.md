@@ -58,7 +58,7 @@ intro: |
 - [IEP Meetings: An Overview](https://www.understood.org/en/articles/the-iep-meeting-an-overview)
 - [Facilitated IEP Meetings](https://www.cadreworks.org/cadre-continuum/stage-3-conflict/facilitation/facilitated-iep-team-meeting-massachusetts)
 - [IEP Meeting Tips](https://www.legillislaw.com/iep-team-meeting-tips/)
-- [Recording Meetings](http://mail.shorecollaborative.org/profdev/Documenting,%20Recording%20IEP%20Meetings.pdf)
+- [Recording Meetings](https://www.wrightslaw.com/advoc/tips/palmer.meeting.tape.htm)
 - [How To Request a Meeting](https://www.understood.org/en/articles/6-steps-to-request-an-iep-meeting)
 - [What to do at IEP Meetings](https://www.wrightslaw.com/info/iep.tips.eason1.htm)
 
