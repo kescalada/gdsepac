@@ -33,7 +33,7 @@ intro: |
 - [YO! Disabled and Proud](https://yodisabledproud.org)
 - [NCLD Youth](http://www.ncld-youth.info/index.php?id=01)
 - [National Association of the Deaf Youth Leadership](https://www.nad.org/youth/)
-- [MA Advocates Youth Leaders Fellowship](https://www.massadvocates.org/young-adult-leaders-fellowship-program)
+- [MA Advocates Youth Leaders Fellowship](https://www.massadvocates.org/youthfellowship)
 - [Youth Celebrate Diversity](https://ycdiversity.org)
 
 ## Restraint and Seclusion
