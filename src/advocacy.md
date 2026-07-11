@@ -29,7 +29,7 @@ intro: |
 ## Youth Advocacy
 
 - [Student Self Advocacy and IEP Meetings](https://youtu.be/94sUNUYasZg)
-- [What is Self Advocacy?](https://fcsn.org/what-is-self-advocacy-and-why-is-it-important/)
+- [What is Self Advocacy?](https://ldaamerica.org/lda_today/understanding-self-advocacy/)
 - [YO! Disabled and Proud](https://yodisabledproud.org)
 - [NCLD Youth](http://www.ncld-youth.info/index.php?id=01)
 - [National Association of the Deaf Youth Leadership](https://www.nad.org/youth/)
