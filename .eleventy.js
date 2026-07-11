@@ -37,6 +37,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy(".nojekyll");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   // Rewrite root-relative URLs (/styles.css, /assets/…, /about-us-contact/) to
   // include the pathPrefix. Handles Markdown links too, which can't use filters,
@@ -153,7 +154,7 @@ module.exports = function (eleventyConfig) {
   // pathPrefix-correct), indexes only the <main> region, and writes
   // _site/search-index.js as `window.SEARCH_INDEX = [...]`.
   eleventyConfig.on("eleventy.after", ({ dir, results }) => {
-    const prefix = (process.env.PATH_PREFIX || "/gdsepac/").replace(/\/$/, "");
+    const prefix = (process.env.PATH_PREFIX || "/").replace(/\/$/, "");
     const decode = (s) =>
       s
         .replace(/<span class="visually-hidden">[\s\S]*?<\/span>/gi, "")
@@ -234,7 +235,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },
-    pathPrefix: process.env.PATH_PREFIX || "/gdsepac/",
+    pathPrefix: process.env.PATH_PREFIX || "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
