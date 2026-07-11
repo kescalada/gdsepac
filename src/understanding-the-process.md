@@ -47,7 +47,7 @@ intro: |
 ## Independent Educational Evaluations (IEEs)
 
 - [Requesting an Outside Evaluation](https://youtu.be/0C2g6nzdG_0)
-- [IEE FAQs](https://www.understood.org/en/articles/independent-educational-evaluations-iees-what-you-need-to-know)
+- [IEEs: What You Need To Know](https://www.understood.org/en/articles/independent-educational-evaluations-iees-what-you-need-to-know)
 - [2025 DESE Guidance on IEEs](https://www.doe.mass.edu/specialeducation/policy/dese/advisories/memo-sy2024-2025-7.html)
 - [Disagree with the District's Evaluation? Let's Talk IEE](https://www.maseradvocacy.com/blog/2020/11/3/disagree-with-the-districts-evaluationresults-lets-talk-independent-educational-evaluations-iee)
 - [Sample Letter Requesting IEE](https://www.massadvocates.org/resources/lettertemplates)
