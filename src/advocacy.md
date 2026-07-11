@@ -4,6 +4,13 @@ layout: resource.njk
 intro: |
   Resources to take action and collaborate in the best interest of children.
 ---
+## Finding an Advocate
+
+- [COPAA Guidelines for Choosing an Advocate](https://www.copaa.org/page/GuidelinesAdv)
+- [Selecting an Advocate (FCSN Brochure)](https://fcsn.org/resource/selecting-an-advocate-brochure/)
+- [Find a Professional: COPAA Advocate & Attorney Directory](https://connect.copaa.org/copaaconnecttab/find-a-professional)
+- [Massachusetts Advocates for Children: Helpline](https://www.massadvocates.org/helpline)
+
 ## Being a Parent Advocate
 
 - [Parent Advocacy at School: 8 Steps](https://www.understood.org/en/articles/parent-advocacy-steps)
