@@ -66,7 +66,7 @@ intro: |
 
 - [Transition Planning Process](https://fcsn.org/tips-the-secondary-transition-planning-process-english/)
 - [Transition Assessment](https://fcsn.org/tips-the-transition-assessment-english/)
-- [Decision Making at Age 18](https://fcsn.org/tips-decision-making-and-the-age-of-majority-english/)
+- [Decision Making at Age 18](https://fcsn.org/resource/age-of-majority-in-ma/)
 - [Secondary Services](https://fcsn.org/tips-secondary-transition-services-english/)
 - [Transition Planning Form](https://fcsn.org/tips-the-transition-planning-form-english/)
 - [Graduation with an IEP](https://fcsn.org/tips-graduation-and-students-with-ieps-english/)
