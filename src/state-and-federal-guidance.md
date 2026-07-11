@@ -18,7 +18,7 @@ intro: |
 
 ## IDEA and FAPE
 
-- [What is IDEA?](https://fcsn.org/what-is-i-d-e-a/)
+- [What is IDEA?](https://fcsn.org/resource/what-is-idea/)
 - [10 Procedural Safeguards in IDEA](https://www.understood.org/en/articles/10-key-procedural-safeguards-in-idea)
 - [Access to the General Education Curriculum](https://fcsn.org/access-to-the-general-curriculum/)
 - [Complete Guide to Understanding FAPE](https://www.sandiegospecialeducationattorney.com/the-complete-guide-to-understanding-fape-free-appropriate-public-education)
