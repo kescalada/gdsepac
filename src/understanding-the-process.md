@@ -69,7 +69,7 @@ intro: |
 - [Decision Making at Age 18](https://fcsn.org/tips-decision-making-and-the-age-of-majority-english/)
 - [Secondary Services](https://fcsn.org/tips-secondary-transition-services-english/)
 - [Transition Planning Form](https://fcsn.org/tips-the-transition-planning-form-english/)
-- [Graduation with an IEP](https://fcsn.org/tips-graduation-and-students-with-ieps-english/)
+- [Graduation with an IEP](https://fcsn.org/resource/tips-graduation-english/)
 - [Work Support: College Planning](http://worksupport.com/CCP/)
 - [Competitive Integrated Employment](https://www.perkins.org/resource/what-is-competitive-integrated-employment/)
 - [MA Bureau of Transition Planning](https://www.mass.gov/service-details/bureau-of-transitional-planning)
