@@ -54,7 +54,7 @@ intro: |
 
 ## Meetings
 
-- [Education Decision Making Roles](https://fcsn.org/education-decision-making-roles-who-can-sign-what/)
+- [Educational Decision Makers](https://childrenslawcenter.org/wp-content/uploads/2021/07/11.-Educational-Decision-Makers.pdf)
 - [IEP Meetings: An Overview](https://www.understood.org/en/articles/the-iep-meeting-an-overview)
 - [Facilitated IEP Meetings](https://www.cadreworks.org/cadre-continuum/stage-3-conflict/facilitation/facilitated-iep-team-meeting-massachusetts)
 - [IEP Meeting Tips](https://www.legillislaw.com/iep-team-meeting-tips/)
