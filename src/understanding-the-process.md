@@ -22,7 +22,7 @@ intro: |
 - [What is a 504 Plan?](https://chadd.org/for-parents/section-504/)
 - [Section 504 and the Americans with Disabilities Act](https://www.doe.mass.edu/specialeducation/families/sec504.html)
 - [504 Plans and Medical Needs](https://www.bmc.org/pediatrics-special-kids-special-help/plan-your-childs-education/504-plan)
-- [Parent's Guide to 504 Plans from Brookline Public Schools](https://www.brookline.k12.ma.us/cms/lib/MA01907509/Centricity/Domain/96/504%20Parent%20Guide.pdf)
+- [Parent and Educator Resource Guide to Section 504](https://www.ed.gov/media/document/parent-and-educator-resource-guide-section-504-public-elementary-and-secondary-schools-2016-21262.pdf)
 
 ## Assessments/Evaluations
 
