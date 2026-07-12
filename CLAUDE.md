@@ -12,7 +12,7 @@ authored in Markdown so non-engineer volunteers can edit and review it via GitHu
 
 ```bash
 npm install        # once, to install Eleventy
-npm run serve      # local dev server with live reload -> http://localhost:8080/gdsepac/
+npm run serve      # local dev server with live reload -> http://localhost:8080/
 npm run build      # one-off build into _site/
 ```
 
@@ -86,6 +86,6 @@ stub is generated at each old path from `_data/redirects.js` (`src/redirects.njk
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds with Eleventy and
 publishes `_site/` to the **`gh-pages`** branch; GitHub Pages serves the site from that branch at
-https://kescalada.github.io/gdsepac/. Pull requests get a live preview URL via
+https://gdsepac.com/. Pull requests get a live preview URL via
 `.github/workflows/pr-preview.yml` (published under `pr-preview/pr-N/`), so a non-technical
 reviewer can click through the rendered change before it merges.

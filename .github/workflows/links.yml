@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      # Build with a ROOT path prefix (not the production /gdsepac/) so the
-      # root-relative /assets/… and /page/ URLs resolve directly under _site/.
-      # The /gdsepac/ prefix would nest them and cause false "not found" reports.
       - name: Build site with a root path prefix
         run: npx eleventy
         env:
