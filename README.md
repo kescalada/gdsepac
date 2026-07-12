@@ -1,6 +1,6 @@
 # GD SEPAC — Static Site
 
-The [Groton Dunstable SEPAC](https://kescalada.github.io/gdsepac/) website — an Eleventy (11ty)
+The [Groton Dunstable SEPAC](https://gdsepac.com/) website — an Eleventy (11ty)
 static site hosted for free on GitHub Pages.
 
 GD SEPAC is the Groton Dunstable Special Education Parent Advisory Council — an all-volunteer
@@ -31,14 +31,16 @@ merges.
 - **By-laws PDF** → add the new dated file under `assets/docs/bylaws/` and point `BYLAWS_PDF`
   in `src/_data/site.js` at it (the About Us button, `/by-laws/` redirect, and search entry all
   follow that one path).
-- **Board members / liaisons** → `src/_data/people.js`.
+- **Meetings & events** → `src/_data/events.yaml` (the Meetings & Events page is generated from
+  it; the file ships empty and the page shows a "no events" state until you add one).
+- **Board members / liaisons** → `src/_data/people.yaml`.
 - **Nav, email, Facebook URL** → `src/_data/site.js`.
 
 ## Working locally
 
 ```bash
 npm install
-npm run serve   # http://localhost:8080/gdsepac/
+npm run serve   # http://localhost:8080/
 ```
 
 `npm run build` produces the static site in `_site/` (generated; not committed).
@@ -46,5 +48,5 @@ npm run serve   # http://localhost:8080/gdsepac/
 ## Hosting
 
 GitHub Actions builds the site and deploys it to the `gh-pages` branch on every push to `main`;
-GitHub Pages serves it from that branch at https://kescalada.github.io/gdsepac/. See
-[`CLAUDE.md`](CLAUDE.md) for the full architecture and conventions.
+GitHub Pages serves it from that branch at https://gdsepac.com/ (custom domain, set via the
+`CNAME` file). See [`CLAUDE.md`](CLAUDE.md) for the full architecture and conventions.
