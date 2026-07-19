@@ -8,9 +8,14 @@ permissions:
   contents: write
   pull-requests: write
 
+# Shared with deploy.yml's group: both workflows push to the gh-pages
+# branch, so they must queue against each other rather than race for the
+# same ref (see run 29692389883). This also means preview builds for
+# different PRs queue behind each other instead of running in parallel,
+# which is an acceptable tradeoff for a low-traffic site.
 concurrency:
-  group: pr-preview-${{ github.event.number }}
-  cancel-in-progress: true
+  group: gh-pages-publish
+  cancel-in-progress: false
 
 jobs:
   preview:

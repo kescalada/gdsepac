@@ -8,10 +8,13 @@ on:
 permissions:
   contents: write
 
-# Never run a production deploy at the same time as another.
+# Serialize with pr-preview.yml too: both workflows push to the gh-pages
+# branch, and without a shared group they can race for the same ref and
+# have a push rejected (see run 29692389883). Queue rather than cancel,
+# since a production deploy should never be killed mid-push.
 concurrency:
-  group: deploy-pages
-  cancel-in-progress: true
+  group: gh-pages-publish
+  cancel-in-progress: false
 
 jobs:
   build-deploy:
