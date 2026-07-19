@@ -2,8 +2,6 @@
 title: State and Federal Guidance
 layout: resource.njk
 intro: |
-  ## Federal and State Laws, Local Policy
-
   Federal laws are the lowest bar of protection for your student. State law can only strengthen the protections of the federal law and never weaken it. Local policies and procedures, like state law, can only serve to further your student's rights but can not contradict state or federal law.
 
   Any child with a disability is protected by both the ADA and Section 504 (where the standard of FAPE is higher than IDEA) regardless of the district providing your child services, supports, or accommodations. In other words, if you inform the district that your student has a disability, the district is required to guarantee their rights under ADA and Section 504. No evaluation, IEP, or 504 plan needed. However, any child with a disability or suspected of having a disability is required to be identified and assessed under Child Find.
@@ -58,7 +56,7 @@ intro: |
 - [603 CMR 46 Prevention of Physical Restraint](https://www.doe.mass.edu/lawsregs/603cmr46.html)
 - [603 CMR 49 Notification of Bullying](https://www.doe.mass.edu/lawsregs/603cmr49.html)
 - [603 CMR 50 Educational Collaboratives](https://www.doe.mass.edu/lawsregs/603cmr50.html)
-- [603 CMR 53 Student Discipline ​​​](https://www.doe.mass.edu/lawsregs/603cmr53.html)
+- [603 CMR 53 Student Discipline](https://www.doe.mass.edu/lawsregs/603cmr53.html)
 
 ## Local Policy
 

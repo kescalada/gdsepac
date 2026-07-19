@@ -91,4 +91,4 @@ intro: |
 ## Behavior, ODD, & CD
 
 - [Teacher-Child Interaction Training](https://www.tcit.org)
-- [​AACAP ODD Resource Center](https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/Oppositional_Defiant_Disorder_Resource_Center/Home.aspx)
+- [AACAP ODD Resource Center](https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/Oppositional_Defiant_Disorder_Resource_Center/Home.aspx)
