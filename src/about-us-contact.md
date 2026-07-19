@@ -3,9 +3,7 @@ title: About Us & Contact
 layout: base.njk
 ---
 
-::: box card
-## Get to Know Us
-
+::: box intro
 The Groton Dunstable Special Education Parent Advisory Council (GD SEPAC) is an all-volunteer organization of parents of exceptional children with unique needs in preschool, elementary school, middle school, high school, homeschool, and in private schools. Our mission is to support families in the community who wish to learn more about special education programs, issues, policies, regulations, and resources.
 
 GD SEPAC serves as a liaison between parents of students with unique needs and school district administrators. We offer information to the community on a range of disabilities, resources, remediation approaches, and education issues. Topics presented at our monthly meetings include parents' rights under special education laws and regulations, effective collaboration with teachers and administrators, and strategies for parenting and teaching children with a range of needs. Meetings are open to all parents, teachers, specialists, and others with an interest in education.

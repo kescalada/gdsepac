@@ -2,8 +2,6 @@
 title: About Disability
 layout: resource.njk
 intro: |
-  ## Learning About Disability
-
   Disability is as varied and unique as the disabled person. As the saying goes, "If you've met one autistic person, you've met ONE autistic person." Part of the mission of GD SEPAC is to educate the community about disability. On this page, we present a number of resources to learn more about living with specific disabilities. We've especially focused on resources created by members of the disabled community.
 
   We are not fans of disability simulators as they rely on generalizations and stereotypes of disability. They tend to evoke pity due to the amplification of the negative traits of disability without acknowledging the adaptations one makes to navigate life in a neurotypical or able-bodied world.
@@ -75,7 +73,7 @@ intro: |
 - [Dyslexic? They're Not Broken](https://youtu.be/aLYGFt5qiso)
 - [The Science of Reading: Basics and Beyond](https://www.scilearn.com/the-science-of-reading-the-basics-and-beyond/)
 
-## Intellectual Disabilty
+## Intellectual Disability
 
 - [How Much Do You Know About Intellectual Disability?](https://www.youtube.com/watch?v=BURbLmQL1BE)
 - [3 Things I Learned from my Intellectually Disabled Son](https://www.ted.com/talks/emilie_weight_3_things_i_learned_from_my_intellectually_disabled_son?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
