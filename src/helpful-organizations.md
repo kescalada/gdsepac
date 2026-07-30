@@ -10,6 +10,8 @@ intro: |
 - [Association for Autism and Neurodiversity](https://aane.org/)
 - [College Autism Network](https://collegeautismnetwork.org)
 - [MA DDS Autism Support Centers](https://www.mass.gov/service-details/dds-autism-support-centers)
+- [Autistic Women & Nonbinary Network](https://awnnetwork.org/)
+- [Spectrum News](https://www.spectrumnews.org/)
 
 ## AD(H)D
 
@@ -25,6 +27,7 @@ intro: |
 - [Science of Reading Podcast](https://amplify.com/science-of-reading-the-podcast/)
 - [Decoding Dyslexia MA](http://www.decodingdyslexiama.org)
 - [International Dyslexia Association](https://dyslexiaida.org)
+- [Learning Ally Audiobooks](https://learningally.org/)
 
 ## Anxiety & Mental Health
 
@@ -32,6 +35,11 @@ intro: |
 - [National Alliance on Mental Health: Schools](https://www.nami.org/Advocacy/Policy-Priorities/Improving-Health/Mental-Health-in-Schools)
 - [Emotional Impairment Definition and Resources](https://www.doe.mass.edu/specialeducation/families/links/emotional.html)
 - [Mental Health America](https://www.mhanational.org)
+- [National Eating Disorders Association](https://www.nationaleatingdisorders.org)
+- [International OCD Foundation](https://kids.iocdf.org)
+- [Selective Mutism Association](http://www.selectivemutism.org/)
+- [Depression and Bipolar Support Alliance](https://www.dbsalliance.org)
+- [Parent/Professional Advocacy League](https://ppal.net)
 
 ## Speech & Hearing
 
@@ -42,6 +50,8 @@ intro: |
 - [Apraxia Kids](https://www.apraxia-kids.org)
 - [The Stuttering Foundation](https://www.stutteringhelp.org)
 - [Word finding difficulties](http://www.wordfinding.com/index.html)
+- [Massachusetts Commission for the Deaf and Hard of Hearing](https://www.mass.gov/orgs/massachusetts-commission-for-the-deaf-and-hard-of-hearing)
+- [The Learning Center for the Deaf](https://www.tlcdeaf.org/)
 
 ## Intellectual Disability (ID)
 
@@ -68,8 +78,9 @@ intro: |
 - [American Federation for the Blind](https://www.afb.org/)
 - [American Printing House for the Blind](https://www.aph.org)
 - [Vision of Children](https://www.visionofchildren.org/)
-- [APH Connect Center](https://aphconnectcenter.org/familyconnect/education/)
 - [American Council of the Blind](https://www.acb.org/)
+- [Massachusetts Commission for the Blind](https://www.mass.gov/orgs/massachusetts-commission-for-the-blind)
+- [Perkins School for the Blind](https://www.perkins.org/)
 
 ## Sensory Processing Disorder
 
@@ -87,6 +98,7 @@ intro: |
 - [Center for Disability Rights](https://cdrnys.org/advocacy/)
 - [National Disability Rights Network](https://www.ndrn.org)
 - [Disability Rights Education & Defense Fund](https://dredf.org)
+- [MassFamilies](https://massfamilies.org/)
 
 ## Behavior, ODD, & CD
 

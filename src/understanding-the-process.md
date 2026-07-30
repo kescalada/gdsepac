@@ -74,6 +74,15 @@ intro: |
 - [Competitive Integrated Employment](https://www.perkins.org/resource/what-is-competitive-integrated-employment/)
 - [MA Bureau of Transition Planning](https://www.mass.gov/service-details/bureau-of-transitional-planning)
 - [Guide to Transition Planning in MA](https://fcsn.org/wp-content/uploads/2021/12/transition_guide.pdf)
+- [MA Housing Resources for People with Disabilities](https://www.mass.gov/info-details/housing-resources-for-people-with-disabilities)
+- [Autism Housing Pathways](https://autismhousingpathways.org/)
+
+## Assistive Technology
+
+- [Assistive Technology: What It Is and How It Works](https://www.understood.org/en/articles/assistive-technology)
+- [MassAbility Assistive Technology Services](https://www.mass.gov/info-details/massability-assistive-technology-services)
+- [MA DESE: Assistive Technology and Accessibility Resources](https://www.doe.mass.edu/specialeducation/iep/assistive/default.html)
+- [IDEA Sec. 300.6: Assistive Technology Service](https://sites.ed.gov/idea/regs/b/a/300.6)
 
 ## Accommodations and Modifications
 
