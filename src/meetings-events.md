@@ -29,16 +29,20 @@ Groton Dunstable SEPAC holds a variety of gatherings and presentations throughou
 ::: box card upcoming
 ## Upcoming GD SEPAC Events
 
-{% if events.length %}
+{% set upcoming = events | futureEvents %}
+{% if upcoming.length %}
 <ul class="events">
-{%- for e in events %}
+{%- for e in upcoming %}
 <li class="event">
 {%- if e.image %}
 <figure class="event-media"><img src="{{ e.image.src }}" alt="{{ e.image.alt }}"></figure>
 {%- endif %}
 <div class="event-body">
 <h3 class="event-title">{{ e.title }}</h3>
-<p class="event-meta">{{ e.date }}{% if e.location %} &middot; {{ e.location }}{% endif %}</p>
+<p class="event-date">{{ e.date | eventDate }}</p>
+{%- if e.location %}
+<p class="event-location">{{ e.location }}</p>
+{%- endif %}
 {%- if e.description %}
 <p>{{ e.description }}</p>
 {%- endif %}

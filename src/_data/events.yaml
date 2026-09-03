@@ -4,8 +4,12 @@
 #
 # Each event is one list entry. Fields:
 #   title        (required)  The event name, e.g. "General Meeting".
-#   date         (required)  When it happens, as plain text, e.g. "September 18, 2026, 7:00pm".
-#                            Keep it in quotes so it stays text, not a parsed date.
+#   date         (required)  When it starts, in Eastern Time, as
+#                            YYYY-MM-DDTHH:MM, e.g. "2026-09-18T19:00".
+#                            The page displays it as "Friday, September 18,
+#                            2026, 7:00 PM". Events drop off the site
+#                            automatically the day after their date (the site
+#                            is rebuilt once a day).
 #   location     (optional)  Where it happens, e.g. "Groton Dunstable Middle School".
 #   description  (optional)  A sentence or two about the event.
 #   image        (optional)  A picture, with two parts:
@@ -20,7 +24,7 @@
 # Copy-paste example (delete the leading "# " on each line to use it):
 #
 # - title: "General Meeting"
-#   date: "September 18, 2026, 7:00pm"
+#   date: "2026-09-18T19:00"
 #   location: "Virtual (Zoom)"
 #   description: "Updates from Student Services and open discussion. All are welcome."
 #   image:
@@ -30,7 +34,12 @@
 #     url: "https://example.com/rsvp"
 #     label: "RSVP"
 #
-# There are no events yet. To add events, REPLACE the `[]` on the last line with
-# entries like the commented example above (each event starting with `- `). To
-# have no events, keep the `[]` — an empty list is the "no events" state.
-[]
+# To have no events, change the list below to `[]`.
+- title: "SEPAC Walk & Talk"
+  date: "2026-09-11T09:30"
+  location: "Groton Rail Trail parking lot behind the library"
+  description: "Join us for a casual morning walk, conversation, and connection. Rainy Day? We'll meet at Salt & Light instead."
+- title: "Evening with Lisa Drennan (MERGE Inclusion Consulting)"
+  date: "2026-10-08T19:00"
+  location: "Middle School Performing Arts Center"
+  description: "Join us for an inspiring evening with Lisa Drennan (MERGE Inclusion Consulting) as we explore how every member of our community can help create spaces where all students feel included and supported. Arrive early to visit local community vendors and resource tables before the session begins. Hosted by Groton-Dunstable SEPAC. Made possible by a grant from the Town of Groton's Trust Fund's Lecture Fund. Free and open to all."

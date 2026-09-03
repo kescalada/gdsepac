@@ -32,7 +32,8 @@ merges.
   in `src/_data/site.js` at it (the About Us button, `/by-laws/` redirect, and search entry all
   follow that one path).
 - **Meetings & events** → `src/_data/events.yaml` (the Meetings & Events page is generated from
-  it; the file ships empty and the page shows a "no events" state until you add one).
+  it; dates are Eastern-Time `YYYY-MM-DDTHH:MM`, and events drop off automatically the day after
+  their date — the site rebuilds once a day).
 - **Board members / liaisons** → `src/_data/people.yaml`.
 - **Nav, email, Facebook URL** → `src/_data/site.js`.
 

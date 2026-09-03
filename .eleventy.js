@@ -50,6 +50,37 @@ module.exports = function (eleventyConfig) {
   // Render a Markdown string to HTML (for frontmatter prose like `intro`).
   eleventyConfig.addFilter("md", (str) => (str ? mdInline.render(str) : ""));
 
+  // --- Event date helpers (Meetings & Events) ---
+  // Event `date` values are ISO wall-clock times in Eastern Time, e.g.
+  // "2026-09-11T09:30". For display we parse them as UTC and format in UTC,
+  // so the wall time the author wrote renders exactly — no drift from the
+  // build machine's timezone or from DST.
+  // (Date and time are formatted separately and joined with ", " because a
+  // single en-US date-time formatter would render "…2026 at 9:30 AM".)
+  const displayDate = new Intl.DateTimeFormat("en-US", {
+    timeZone: "UTC", weekday: "long", year: "numeric", month: "long", day: "numeric",
+  });
+  const displayTime = new Intl.DateTimeFormat("en-US", {
+    timeZone: "UTC", hour: "numeric", minute: "2-digit",
+  });
+  // "YYYY-MM-DD" for today, in the site's timezone.
+  const todayEastern = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" });
+
+  // "2026-09-11T09:30" -> "Friday, September 11, 2026, 9:30 AM".
+  eleventyConfig.addFilter("eventDate", (iso) => {
+    const d = new Date(`${iso}Z`);
+    return `${displayDate.format(d)}, ${displayTime.format(d)}`;
+  });
+
+  // Events stay listed through their own date and drop off the day after (ET).
+  // A daily workflow rebuilds the site so this filter re-runs each day.
+  eleventyConfig.addFilter("futureEvents", (events) => {
+    const today = todayEastern.format(new Date());
+    return Array.isArray(events)
+      ? events.filter((e) => String(e.date).slice(0, 10) >= today)
+      : [];
+  });
+
   // Encode every character of a string as a numeric HTML entity (`&#NN;`).
   // Used for the contact address (`site.EMAIL`) so it never appears as
   // plaintext in the served HTML, defeating naive email-harvesting scrapers.

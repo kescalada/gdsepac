@@ -1,0 +1,42 @@
+name: Daily rebuild (drop past events)
+
+# The site is static, so past events only disappear when it is rebuilt. The
+# futureEvents filter in .eleventy.js drops events whose date has passed at
+# build time; this rebuilds once a day and re-publishes to gh-pages.
+# 06:00 UTC is 01:00 EDT / 02:00 EST, i.e. shortly after midnight Eastern in
+# both DST seasons, so an event drops off just after its day ends.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Same shared group as deploy.yml / pr-preview.yml: all three push to the
+# gh-pages branch and must not race for the same ref.
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Validate content data
+        run: npm run validate
+      - name: Build site
+        run: npx eleventy
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          # Keep the pr-preview/ directory (managed by pr-preview.yml) from
+          # being wiped on a daily deploy.
+          keep_files: true

@@ -26,8 +26,12 @@ npm run build      # one-off build into _site/
   (The by-laws are a downloadable PDF under `assets/docs/bylaws/`, not a page — see below.)
 - **`src/index.njk`** — the home page (hero + cards + a quicklink grid generated from the nav).
 - **`src/_data/site.js`** — `EMAIL`, `FACEBOOK`, `DISTRICT`, `BYLAWS_PDF`, and `NAV` (nav order + labels).
-- **`src/_data/people.js`** — Board of Directors and School Liaisons (edit a name here to update
-  the About page — no HTML needed).
+- **`src/_data/people.yaml`** — Board of Directors and School Liaisons (edit a name here to
+  update the About page — no HTML needed).
+- **`src/_data/events.yaml`** — Upcoming events on the Meetings & Events page. Dates are
+  Eastern-Time `YYYY-MM-DDTHH:MM`; the `eventDate` / `futureEvents` filters in `.eleventy.js`
+  format them for display and drop past events at build time. A daily workflow
+  (`.github/workflows/expire-events.yml`) rebuilds and re-publishes so events expire on schedule.
 - **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below);
   `/by-laws/` and `by-laws.html` redirect to the by-laws PDF.
 - **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, the site-search bar, footer,
