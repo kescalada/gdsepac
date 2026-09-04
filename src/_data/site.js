@@ -11,6 +11,12 @@ module.exports = {
   // this one path.
   BYLAWS_PDF: "/assets/docs/bylaws/gdsepac-bylaws-2026.pdf",
 
+  // The MassPAC 2026-27 workshop calendar is a downloadable PDF (listed on the
+  // Meetings & Events page, which also shows the next four weeks from
+  // masspac.yaml). When FC publishes a new calendar, drop in the new dated file
+  // and update this one path (and regenerate masspac.yaml).
+  MASSPAC_PDF: "/assets/docs/masspac/masspac-calendar-2026-27.pdf",
+
   // Navigation order. `url` is the built (pretty) URL; `| url` adds the path prefix.
   NAV: [
     { label: "Home", url: "/" },

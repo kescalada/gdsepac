@@ -81,6 +81,43 @@ module.exports = function (eleventyConfig) {
       : [];
   });
 
+  // --- MassPAC workshop helpers (Meetings & Events) ---
+  // masspac.yaml holds the whole 2026-27 MassPAC calendar in the same ISO
+  // Eastern wall-clock convention as events.yaml. The page shows only the
+  // workshops in the next four weeks; the same daily workflow that expires
+  // events re-runs this filter, so the window rolls forward with no upkeep.
+  eleventyConfig.addFilter("masspacWindow", (workshops) => {
+    const today = todayEastern.format(new Date());
+    const windowEnd = todayEastern.format(new Date(Date.now() + 27 * 86400000));
+    return Array.isArray(workshops)
+      ? workshops.filter((w) => {
+          const d = String(w.date).slice(0, 10);
+          return d >= today && d <= windowEnd;
+        })
+      : [];
+  });
+
+  const masspacDateFmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: "UTC", month: "long", day: "numeric", year: "numeric",
+  });
+  const clockFmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: "UTC", hour: "numeric", minute: "2-digit",
+  });
+
+  // "2026-09-11T13:00" -> "September 11, 2026".
+  eleventyConfig.addFilter("masspacDate", (iso) => masspacDateFmt.format(new Date(`${iso}Z`)));
+
+  // "2026-09-11T13:00" + "15:00" -> "1:00–3:00 PM" (one range when AM/PM
+  // doesn't change, e.g. "11:30 AM–1:00 PM" otherwise).
+  eleventyConfig.addFilter("masspacTime", (iso, end) => {
+    const start = clockFmt.format(new Date(`${iso}Z`));
+    if (!end) return start;
+    const fullEnd = clockFmt.format(new Date(`${iso.slice(0, 10)}T${end}Z`));
+    const [stTime, stMer] = start.split(" ");
+    const [enTime, enMer] = fullEnd.split(" ");
+    return stMer === enMer ? `${stTime}–${enTime} ${stMer}` : `${stTime} ${stMer}–${enTime} ${enMer}`;
+  });
+
   // Encode every character of a string as a numeric HTML entity (`&#NN;`).
   // Used for the contact address (`site.EMAIL`) so it never appears as
   // plaintext in the served HTML, defeating naive email-harvesting scrapers.
@@ -255,6 +292,15 @@ module.exports = function (eleventyConfig) {
       section: "",
       pageTitle: "PDF download",
       href: prefix + site.BYLAWS_PDF,
+    });
+
+    // Same treatment for the MassPAC workshop calendar PDF.
+    records.push({
+      title: "MassPAC Workshop Calendar (2026-27)",
+      text: "MassPAC masspac workshop calendar special education Federation for Children with Special Needs FCSN IEP transition planning referral evaluation eligibility bullying",
+      section: "",
+      pageTitle: "PDF download",
+      href: prefix + site.MASSPAC_PDF,
     });
 
     fs.writeFileSync(

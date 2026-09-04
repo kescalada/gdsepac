@@ -34,6 +34,10 @@ merges.
 - **Meetings & events** → `src/_data/events.yaml` (the Meetings & Events page is generated from
   it; dates are Eastern-Time `YYYY-MM-DDTHH:MM`, and events drop off automatically the day after
   their date — the site rebuilds once a day).
+- **MassPAC workshops** → `src/_data/masspac.yaml` (the full 2026-27 MassPAC calendar; the page
+  shows the next four weeks automatically). The full calendar is a PDF under `assets/docs/masspac/`
+  (path in `site.js` as `MASSPAC_PDF`). If FC publishes a new calendar, add the new dated PDF,
+  update `MASSPAC_PDF`, and refresh `masspac.yaml`.
 - **Board members / liaisons** → `src/_data/people.yaml`.
 - **Nav, email, Facebook URL** → `src/_data/site.js`.
 

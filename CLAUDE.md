@@ -32,6 +32,11 @@ npm run build      # one-off build into _site/
   Eastern-Time `YYYY-MM-DDTHH:MM`; the `eventDate` / `futureEvents` filters in `.eleventy.js`
   format them for display and drop past events at build time. A daily workflow
   (`.github/workflows/expire-events.yml`) rebuilds and re-publishes so events expire on schedule.
+- **`src/_data/masspac.yaml`** — The full 2026-27 MassPAC (Federation for Children with Special
+  Needs) workshop calendar, transcribed from the PDF under `assets/docs/masspac/` (path in
+  `site.js` as `MASSPAC_PDF`). The Meetings & Events page shows only the workshops in the next
+  four weeks via the `masspacWindow` filter (with `masspacDate` / `masspacTime` for display), so
+  the list rolls forward automatically at each daily rebuild — no per-week upkeep.
 - **`src/_data/redirects.js`** — old `*.html` URLs → new pretty URLs (see redirects below);
   `/by-laws/` and `by-laws.html` redirect to the by-laws PDF.
 - **`src/_includes/`** — layouts: `base.njk` (header, accessible nav, the site-search bar, footer,
@@ -51,6 +56,9 @@ npm run build      # one-off build into _site/
 - New by-laws version → add the dated PDF under `assets/docs/bylaws/` and update `BYLAWS_PDF` in
   `src/_data/site.js` (one path drives the About Us download button, the `/by-laws/` redirect, and
   the search entry).
+- New MassPAC calendar (FC publishes one per school year) → add the dated PDF under
+  `assets/docs/masspac/`, update `MASSPAC_PDF` in `src/_data/site.js`, and refresh
+  `src/_data/masspac.yaml` from the new PDF (validate with `npm run validate`).
 - Board members or liaisons → `src/_data/people.js`.
 - Nav order / labels, or the contact email / Facebook URL → `src/_data/site.js`.
 - New page → add it to `NAV` in `site.js`, create `src/<slug>.md`, and (if linked from an old

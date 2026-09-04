@@ -22,7 +22,7 @@ Groton Dunstable SEPAC holds a variety of gatherings and presentations throughou
   <dt>Liaison Meetings</dt>
   <dd>Liaisons attend their assigned meetings, based on the schedule of their affiliated groups and then provide updates to membership during monthly meetings.</dd>
   <dt>MassPAC Workshops</dt>
-  <dd>MassPAC workshop offerings are also available to members of the GDRSD community. These will also be emailed as part of the GDRSD Community Happenings newsletter.</dd>
+  <dd>MassPAC is the statewide organization of Massachusetts SEPACs. Its workshop offerings are available to members of the GDRSD community, and upcoming workshops are also emailed as part of the GDRSD Community Happenings newsletter.</dd>
 </dl>
 :::
 
@@ -61,7 +61,22 @@ Groton Dunstable SEPAC holds a variety of gatherings and presentations throughou
 ::: box card upcoming
 ## Upcoming MassPAC Workshops
 
-MassPAC workshop offerings are available to members of the GDRSD community. View the current schedule on the [FCSN events calendar](https://fcsn.org/calendar/).
+MassPAC workshops, hosted by the Federation for Children with Special Needs (FCSN), are open to members of the GDRSD community. The list below shows the workshops taking place in the next four weeks; dates are subject to change. For the latest schedule, and to register for events, visit the [FCSN events calendar](https://fcsn.org/calendar/).
 
-<p><a class="btn btn-outline" href="https://fcsn.org/calendar/" target="_blank" rel="noopener">View MassPAC Workshops</a></p>
+{% set masspacNext = masspac | masspacWindow %}
+{% if masspacNext.length %}
+<ul class="masspac">
+{%- for w in masspacNext %}
+<li class="masspac-row">
+<span class="masspac-date">{{ w.date | masspacDate }}</span>
+<span class="masspac-time">{{ w.date | masspacTime(w.end) }}</span>
+<span class="masspac-topic">{{ w.topic }}</span>
+</li>
+{%- endfor %}
+</ul>
+{% else %}
+<p class="muted">No MassPAC workshops are scheduled in the next four weeks.</p>
+{% endif %}
+
+<p><a class="btn btn-outline" href="{{ site.MASSPAC_PDF }}">Download the full 2026–27 calendar (PDF)</a></p>
 :::

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "validate": "ajv validate --spec=draft2020 -s schema/events.schema.json -d src/_data/events.yaml && ajv validate --spec=draft2020 -s schema/people.schema.json -d src/_data/people.yaml"
+    "validate": "ajv validate --spec=draft2020 -s schema/events.schema.json -d src/_data/events.yaml && ajv validate --spec=draft2020 -s schema/people.schema.json -d src/_data/people.yaml && ajv validate --spec=draft2020 -s schema/masspac.schema.json -d src/_data/masspac.yaml"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
