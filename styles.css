@@ -149,6 +149,16 @@ main { padding: 36px 0 56px; }
 .event-date { margin: 0 0 2px; font-weight: 700; }
 .event-location { margin: 0 0 8px; color: var(--muted); font-size: .92rem; }
 
+/* MassPAC workshop rows (Meetings & Events page) */
+.masspac { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 8px; }
+.masspac-row {
+  display: grid; grid-template-columns: 190px 150px 1fr; gap: 4px 16px; align-items: baseline;
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 10px 16px;
+}
+.masspac-date { font-weight: 700; }
+.masspac-time { color: var(--muted); font-variant-numeric: tabular-nums; }
+
 /* Quick links (home) */
 .quicklinks h2 { color: var(--brand-dark); }
 .quicklink-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
@@ -202,6 +212,7 @@ main { padding: 36px 0 56px; }
   .js .nav-list.open { display: flex; }
   .event { flex-direction: column; }
   .event-media { flex-basis: auto; width: 100%; }
+  .masspac-row { grid-template-columns: 1fr; gap: 2px; }
 }
 
 @media (max-width: 600px) {
