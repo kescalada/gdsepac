@@ -44,7 +44,7 @@ Groton Dunstable SEPAC holds a variety of gatherings and presentations throughou
 <p class="event-location">{{ e.location }}</p>
 {%- endif %}
 {%- if e.description %}
-<p>{{ e.description }}</p>
+{{ e.description | md | safe }}
 {%- endif %}
 {%- if e.link %}
 <p><a class="btn btn-outline" href="{{ e.link.url }}">{{ e.link.label }}</a></p>

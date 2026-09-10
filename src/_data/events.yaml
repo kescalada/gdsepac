@@ -11,7 +11,8 @@
 #                            automatically the day after their date (the site
 #                            is rebuilt once a day).
 #   location     (optional)  Where it happens, e.g. "Groton Dunstable Middle School".
-#   description  (optional)  A sentence or two about the event.
+#   description  (optional)  A sentence or two about the event. Supports inline
+#                            Markdown, e.g. [Register](https://…) for a link.
 #   image        (optional)  A picture, with two parts:
 #                              src  the file path, which MUST start with /assets/
 #                                   (put the image file in the assets/ folder first).
@@ -39,6 +40,14 @@
   date: "2026-09-11T09:30"
   location: "Groton Rail Trail parking lot behind the library"
   description: "Join us for a casual morning walk, conversation, and connection. Rainy Day? We'll meet at Salt & Light instead."
+- title: "Recognizing Learning Disabilities and Advocating for Supports in School"
+  date: "2026-09-16T18:30"
+  location: "Online (Microsoft Teams)"
+  description: "The Lurie Center for Autism invites you to join Rachel Goldin, PhD, and Elise Wulff, MEd, to learn how to recognize common signs of learning disabilities and advocate for the supports students need in school. We'll discuss signs that may appear at home and in the classroom, how to navigate the school support process, and strategies for collaborating effectively with educators. [Register for the webinar](https://events.teams.microsoft.com/event/3cdfa06a-c8e5-422f-8ea6-c6e11c79782d@720edb1f-5c4e-4043-8141-214a63a7ead5?source=copyLinkOneEventsShareDialog) to receive the Microsoft Teams link by email before the event."
+- title: "General Meeting – Virtual Welcome Back"
+  date: "2026-09-24T19:00"
+  location: "Online (Zoom)"
+  description: "Join us for our first general meeting of the school year and hear from Jill Greene about the 2026–27 school year. [Join the Zoom meeting](https://us02web.zoom.us/j/87809897711?pwd=w6eliG4CuAdHXim2N9vRsimoMQNey9.1)."
 - title: "Evening with Lisa Drennan (MERGE Inclusion Consulting)"
   date: "2026-10-08T19:00"
   location: "Middle School Performing Arts Center"
