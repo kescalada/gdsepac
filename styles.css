@@ -123,6 +123,7 @@ main { padding: 36px 0 56px; }
 .btn-outline:hover { background: var(--brand-light); color: var(--brand-dark) !important; }
 
 .contact-cta { background: var(--soft); border-color: var(--line); }
+.newsletter-cta { margin: 0 0 22px; }
 
 /* People lists */
 .people { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
