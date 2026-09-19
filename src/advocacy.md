@@ -24,7 +24,6 @@ intro: |
 - [Filing Complaints](https://www.wrightslaw.com/howey/complaints.tips.pdf)
 - [How to Review Your Child's Educational Record](https://www.wrightslaw.com/blog/14-tips-reviewing-your-childs-educational-record/)
 - [Back To School: 10 Tips for a Good Year](https://www.wrightslaw.com/howey/10tips.sch.yr.htm)
-- [What Happens When You Reject an IEP?](https://www.nobleeducationlaw.com/blog/what-happens-after-you-reject-an-iep)
 
 ## Youth Advocacy
 

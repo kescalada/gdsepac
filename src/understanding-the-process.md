@@ -24,7 +24,7 @@ intro: |
 - [504 Plans and Medical Needs](https://www.bmc.org/pediatrics-special-kids-special-help/plan-your-childs-education/504-plan)
 - [Parent and Educator Resource Guide to Section 504](https://www.ed.gov/media/document/parent-and-educator-resource-guide-section-504-public-elementary-and-secondary-schools-2016-21262.pdf)
 
-## Assessments/Evaluations
+## Evaluations
 
 - [Requesting an Evaluation](https://www.parentcenterhub.org/evaluation-2/)
 - [Video Guide: Requesting an Evaluation](https://youtu.be/yGDtWXyRiXA)
@@ -61,6 +61,12 @@ intro: |
 - [Recording Meetings](https://www.wrightslaw.com/advoc/tips/palmer.meeting.tape.htm)
 - [How To Request a Meeting](https://www.understood.org/en/articles/6-steps-to-request-an-iep-meeting)
 - [What to do at IEP Meetings](https://www.wrightslaw.com/info/iep.tips.eason1.htm)
+
+## Disputes and Mediation
+
+- [What Happens When You Reject an IEP?](https://www.nobleeducationlaw.com/blog/what-happens-after-you-reject-an-iep)
+- [Bureau of Special Education Appeals (BSEA)](https://www.mass.gov/orgs/bureau-of-special-education-appeals)
+- [Learn About Mediation at the BSEA](https://www.mass.gov/info-details/learn-about-mediation-at-the-bsea)
 
 ## Transitions Ages 14-22
 

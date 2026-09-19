@@ -99,6 +99,7 @@ intro: |
 - [National Disability Rights Network](https://www.ndrn.org)
 - [Disability Rights Education & Defense Fund](https://dredf.org)
 - [MassFamilies](https://massfamilies.org/)
+- [Family Partnership Center (local support group)](https://familypartnershipcenter.weebly.com/)
 
 ## Behavior, ODD, & CD
 
